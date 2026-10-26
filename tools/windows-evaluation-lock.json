@@ -1,0 +1,11 @@
+{
+  "evaluation": "Windows Server 2025",
+  "page": "https://www.microsoft.com/en-us/evalcenter/download-windows-server-2025",
+  "source_url": "https://go.microsoft.com/fwlink/?clcid=0x409&country=us&culture=en-us&linkid=2345730",
+  "url": "https://software-static.download.prss.microsoft.com/dbazure/998969d5-f34g-4e03-ac9d-1f9786c66749/26100.32230.260111-0550.lt_release_svc_refresh_SERVER_EVAL_x64FRE_en-us.iso",
+  "path": "downloads/enrollment-installers/26100.32230.260111-0550.lt_release_svc_refresh_SERVER_EVAL_x64FRE_en-us.iso",
+  "bytes": 8152356864,
+  "trust": "Official publisher HTTPS; first acquisition is locally SHA256 pinned. No independent publisher whole-ISO hash claimed",
+  "native_acceptance": false,
+  "evaluation_limits": "Disposable offline test only; no activation or license extension is performed"
+}

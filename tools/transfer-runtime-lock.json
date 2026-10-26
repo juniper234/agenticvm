@@ -1,0 +1,58 @@
+{
+  "schema": "agenticvm.transfer-runtime.v1",
+  "source": "Official PyPI JSON metadata; SHA-256 pinned at preparation, not a publisher signature",
+  "platforms": {
+    "windows": [
+      {
+        "package": "PyNaCl",
+        "version": "1.6.2",
+        "filename": "pynacl-1.6.2-cp38-abi3-win_amd64.whl",
+        "url": "https://files.pythonhosted.org/packages/41/ad/334600e8cacc7d86587fe5f565480fde569dfb487389c8e1be56ac21d8ac/pynacl-1.6.2-cp38-abi3-win_amd64.whl",
+        "bytes": 239754,
+        "sha256": "62985f233210dee6548c223301b6c25440852e13d59a8b81490203c3227c5ba0"
+      },
+      {
+        "package": "cffi",
+        "version": "2.1.1",
+        "filename": "cffi-2.1.1-cp313-cp313-win_amd64.whl",
+        "url": "https://files.pythonhosted.org/packages/60/a6/8b149b2c3f2e11aaa1618ef64500b45f50f22c57a977a4dff1aff1f91042/cffi-2.1.1-cp313-cp313-win_amd64.whl",
+        "bytes": 185688,
+        "sha256": "1aa5645c30469b09530c4ebca77ebf8f17618293c58f8549cb1a543a50236e7d"
+      },
+      {
+        "package": "pycparser",
+        "version": "3.11",
+        "filename": "pycparser-3.11-py3-none-any.whl",
+        "url": "https://files.pythonhosted.org/packages/90/11/0e6f11117525ff0eec40ebac3d313376f102df93ca44ad9e893ee85e4f89/pycparser-3.11-py3-none-any.whl",
+        "bytes": 51178,
+        "sha256": "51d5a8ba2be0bbe440b99d2112604c95bbbc3c2748a64260186c541e1729cd80"
+      }
+    ],
+    "linux": [
+      {
+        "package": "PyNaCl",
+        "version": "1.6.2",
+        "filename": "pynacl-1.6.2-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "url": "https://files.pythonhosted.org/packages/7f/81/d60984052df5c97b1d24365bc1e30024379b42c4edcd79d2436b1b9806f2/pynacl-1.6.2-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "bytes": 1399174,
+        "sha256": "22de65bb9010a725b0dac248f353bb072969c94fa8d6b1f34b87d7953cf7bbe4"
+      },
+      {
+        "package": "cffi",
+        "version": "2.1.1",
+        "filename": "cffi-2.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "url": "https://files.pythonhosted.org/packages/95/95/86342356ff5953b3fb06f7ef7c5bee212d45e770abc7218d451b9148313c/cffi-2.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "bytes": 221824,
+        "sha256": "a931079504ecc49efed7744c476a5c343a92fabf66dec2db95edb1b2fdc770e2"
+      },
+      {
+        "package": "pycparser",
+        "version": "3.11",
+        "filename": "pycparser-3.11-py3-none-any.whl",
+        "url": "https://files.pythonhosted.org/packages/90/11/0e6f11117525ff0eec40ebac3d313376f102df93ca44ad9e893ee85e4f89/pycparser-3.11-py3-none-any.whl",
+        "bytes": 51178,
+        "sha256": "51d5a8ba2be0bbe440b99d2112604c95bbbc3c2748a64260186c541e1729cd80"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agenticvm"
+version = "0.4.0b1"
+description = "Local multi-OS desktops with a shared agent CLI and MCP bridge"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+transfer = ["PyNaCl==1.6.2", "cffi==2.1.1", "pycparser==3.11"]
+
+[project.scripts]
+agenticvm = "agenticvm.cli:main"
+agenticvm-control = "agenticvm.control_cli:main"
+agenticvm-desktop-mcp = "agenticvm.desktop_mcp:main"
+agenticvm-peers = "agenticvm.peers:main"
+agenticvm-transfer = "agenticvm.offline_transfer:main"
+agenticvm-courier = "agenticvm.blind_transfer:main"
+agenticvm-live = "agenticvm.live_runtime:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+agenticvm = ["web/*.html", "web/*.css", "web/*.js", "web/*.png", "web/icons/*.svg", "web/icons/LICENSE"]

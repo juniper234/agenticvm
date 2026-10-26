@@ -1,0 +1,10 @@
+{
+  "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/44/Server/x86_64/iso/Fedora-Server-dvd-x86_64-44-1.7.iso",
+  "name": "Fedora-Server-dvd-x86_64-44-1.7.iso",
+  "sha256": "85837793bfa36db6bc709b4cecd2ec116951b87d9c53c3d95eb2fac8dcf7cf1f",
+  "expected_bytes": 3913023488,
+  "version": "44",
+  "digest_source": "https://fedoraproject.org/releases.json",
+  "path": "downloads/enrollment-installers/Fedora-Server-dvd-x86_64-44-1.7.iso",
+  "trust": "Publisher HTTPS release metadata and SHA256; detached signature verification not claimed"
+}

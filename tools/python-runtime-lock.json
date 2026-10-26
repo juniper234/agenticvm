@@ -1,0 +1,24 @@
+{
+  "schema": "agenticvm.python-runtime.v1",
+  "version": "3.13.16",
+  "platform": "windows-x86_64",
+  "url": "https://www.python.org/ftp/python/3.13.16/python-3.13.16-embed-amd64.zip",
+  "digest_source": "https://www.python.org/downloads/release/python-31316/",
+  "sha256": "97dae5274cc54867065e8d5a3226e48c35017ed332a0fdb0e27d5b5821961297",
+  "bytes": 11439094,
+  "archive": "downloads/python/python-3.13.16-embed-amd64.zip",
+  "destination": "tools/python-runtime/3.13.16",
+  "max_unpacked_bytes": 41943040,
+  "max_files": 128,
+  "pth_file": "python313._pth",
+  "stdlib_zip": "python313.zip",
+  "development_source_path": "../../../src",
+  "portable_source_path": "../../src",
+  "authenticode": {
+    "files": ["python.exe", "python313.dll"],
+    "required_status": "Valid",
+    "required_publisher": "Python Software Foundation"
+  },
+  "installer_execution": false,
+  "pip_or_site_packages": false
+}

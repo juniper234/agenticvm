@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" data-vm-state="stopped" data-view="display"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><title>AgenticVM</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script><script src="/settings.js" defer></script><script src="/glass-ui.js" defer></script></head>
+<body><div class="workspace"><aside class="sidebar glass" aria-label="Navigation">
+<a class="brand" href="#display" aria-label="AgenticVM home"><span class="brand-symbol"><img src="/brand.png" alt=""></span>AgenticVM</a>
+<div class="sidebar-content"><p class="nav-label">MACHINES</p><nav class="machines" aria-label="Choose a machine">
+<button class="machine selected" data-profile="desktop" aria-pressed="true"><img class="icon" src="/icons/terminal.svg" alt=""><span class="machine-copy"><strong>Linux</strong><small>Debian 13</small></span><span class="machine-dot"></span></button>
+<button class="machine" data-profile="android" aria-pressed="false"><img class="icon" src="/icons/smartphone.svg" alt=""><span class="machine-copy"><strong>Android</strong><small>Android 15</small></span><span class="machine-dot"></span></button>
+<button class="machine" data-profile="windows" aria-pressed="false"><img class="icon" src="/icons/panels-top-left.svg" alt=""><span class="machine-copy"><strong>Windows</strong><small>Server 2025 · Eval</small></span><span class="machine-dot"></span></button>
+</nav><div class="nav-divider"></div><nav class="workspace-nav" aria-label="Views">
+<button class="nav-item active" data-view="display" aria-current="page"><img class="icon" src="/icons/monitor.svg" alt="">Display</button>
+<button class="nav-item" data-view="tools"><img class="icon" src="/icons/keyboard.svg" alt="">Tools</button>
+<button class="nav-item" data-view="settings"><img class="icon" src="/icons/settings-2.svg" alt="">Settings</button>
+</nav></div><div class="sidebar-bottom"><span class="local-indicator"></span>Local</div></aside>
+<main class="main"><header class="topbar"><div class="breadcrumb"><span>Machines</span><img class="icon tiny" src="/icons/chevron-right.svg" alt=""><span id="breadcrumb-machine">Linux</span></div><button class="icon-button" id="open-appearance" aria-label="Appearance" title="Appearance"><img class="icon" src="/icons/palette.svg" alt=""></button></header>
+<div class="page-heading"><div class="heading-copy"><div class="heading-line"><h1 id="work-title">Linux</h1><span id="status-label" class="status-pill" role="status">Connecting</span></div><p id="guest-label">Debian 13</p><p id="status-detail" class="sr-only">Connecting…</p></div><div class="power-controls" aria-label="Power"><button id="reset" class="button button-quiet" disabled title="Restart"><img class="icon" src="/icons/rotate-ccw.svg" alt=""><span>Restart</span></button><button id="stop" class="button button-stop" hidden><img class="icon" src="/icons/square.svg" alt="">Stop</button><button id="start" class="button button-primary"><img class="icon" src="/icons/play.svg" alt=""><span>Start</span></button></div></div>
+<div id="message" class="message" role="status" aria-live="polite" hidden></div>
+<div class="display-layout view-content" data-page="display"><section class="desktop-panel glass" aria-label="Guest display"><div class="stage-bar"><div><span class="signal-dot"></span><span id="stage-signal">Not connected</span></div><div class="view-controls" role="group" aria-label="Display controls"><button id="pause" class="button button-quiet" aria-label="Pause live view" aria-pressed="false" title="Pause live view">Pause</button><button id="refresh" class="icon-button" aria-label="Refresh" title="Refresh"><img class="icon" src="/icons/rotate-ccw.svg" alt=""></button><button id="fullscreen" class="icon-button" aria-label="Full screen" title="Full screen"><img class="icon" src="/icons/maximize-2.svg" alt=""></button></div></div><p id="display-spec" class="sr-only">1024 × 768 · 1 fps</p>
+<div id="screen-stage" class="screen-stage"><img id="screen" alt="Guest display" tabindex="0" hidden><div id="empty-screen" class="empty-screen"><div class="empty-icon"><img id="empty-os-icon" src="/icons/monitor.svg" alt=""></div><span id="empty-machine-name" hidden>Linux</span><h2 id="empty-description">Stopped</h2><p id="screen-readout">Press Start to open Linux.</p></div><span id="screen-notice" class="screen-notice" hidden></span></div>
+<footer class="desktop-footer"><span><span class="connection-dot"></span><span id="live-label">Stopped</span></span><span id="resolution">Keyboard and mouse</span></footer></section>
+<div class="machine-details" aria-label="Resources"><span><img class="icon" src="/icons/memory-stick.svg" alt=""><span id="ram-label">768 MiB</span></span><span><img class="icon" src="/icons/cpu.svg" alt=""><span id="cpu-label">1 CPU</span></span><span><img id="network-icon" class="icon" src="/icons/wifi.svg" alt=""><span id="network-label">Internet on</span></span><span><img class="icon" src="/icons/hard-drive.svg" alt=""><span id="storage-label">Saved</span></span><button class="icon-button" data-go="settings" aria-label="Machine settings"><img class="icon" src="/icons/settings-2.svg" alt=""></button></div></div>
+<section class="view-content tools-view" data-page="tools" hidden aria-labelledby="tools-title"><div class="section-intro"><h2 id="tools-title">Tools</h2><p>Files, text and commands.</p></div><p id="tools-stopped" class="hint">Start the machine first.</p>
+  <details class="disclosure" id="controls">
+    <summary><span class="summary-index">01</span><span class="summary-label">Controls</span><span class="summary-meta">Input and files</span></summary>
+    <div class="sheet-body">
+      <div class="controls-grid">
+        <section class="control-section" aria-labelledby="website-heading">
+          <div class="section-head"><h2 id="website-heading">Website</h2><span class="section-index">02</span></div>
+          <form id="url-form">
+            <label for="url">Address</label>
+            <div class="field-row">
+              <input id="url" placeholder="https://example.org" spellcheck="false" autocomplete="off">
+              <button data-requires-guest class="button button-quiet" type="submit">Open</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="control-section" aria-labelledby="text-heading">
+          <div class="section-head"><h2 id="text-heading">Text and keys</h2><span class="section-index">03</span></div>
+          <label for="type-text">Text</label>
+          <textarea id="type-text" rows="3" placeholder="Text to send"></textarea>
+          <button data-requires-guest id="send-text" class="button button-quiet" type="button">Send text</button>
+          <div class="key-grid" role="group" aria-label="Keys">
+            <button class="button button-key android-only" type="button" data-requires-guest data-key="home" hidden>Home</button>
+            <button class="button button-key android-only" type="button" data-requires-guest data-key="back" hidden>Back</button>
+            <button class="button button-key android-only" type="button" data-requires-guest data-key="recent" hidden>Recent</button>
+            <button class="button button-key" type="button" data-requires-guest data-key="ctrl+l">Ctrl L</button>
+            <button class="button button-key" type="button" data-requires-guest data-key="ctrl+c">Ctrl C</button>
+            <button class="button button-key" type="button" data-requires-guest data-key="ctrl+v">Ctrl V</button>
+            <button class="button button-key" type="button" data-requires-guest data-key="alt+tab">Alt Tab</button>
+            <button class="button button-key" type="button" data-requires-guest data-key="enter">Enter</button>
+            <button class="button button-key" type="button" data-requires-guest data-key="escape">Esc</button>
+            <button class="button button-key" type="button" data-requires-guest data-key="tab">Tab</button>
+            <button class="button button-key" type="button" data-requires-guest data-key="backspace">Backspace</button>
+          </div>
+        </section>
+
+        <section class="control-section" aria-labelledby="command-heading">
+          <div class="section-head"><h2 id="command-heading">Command</h2><span class="section-index">04</span></div>
+          <label for="terminal-command">Command</label>
+          <textarea id="terminal-command" rows="3" spellcheck="false" placeholder="uname -a"></textarea>
+          <button data-requires-guest id="run-command" class="button button-quiet" type="button">Run</button>
+          <pre id="terminal-output" aria-live="polite">Command output</pre>
+        </section>
+
+        <section class="control-section" aria-labelledby="files-heading">
+          <div class="section-head"><h2 id="files-heading">Files</h2><span class="section-index">05</span></div>
+          <label for="file-path">Guest path</label>
+          <input id="file-path" value="/workspace/" spellcheck="false" autocomplete="off">
+          <label for="upload-file">Upload · up to 1 MB</label>
+          <input data-requires-guest id="upload-file" type="file">
+          <button data-requires-guest id="download" class="button button-quiet" type="button">Download file</button>
+          <p class="hint">Use a full file path to download.</p>
+        </section>
+      </div>
+    </div>
+  </details>
+
+</section><section class="view-content settings-view" data-page="settings" hidden aria-labelledby="settings-title"><div class="section-intro"><h2 id="settings-title">Settings</h2><p>Changes apply on the next start.</p></div>  <details class="disclosure" id="settings">
+    <summary><span class="summary-index">02</span><span class="summary-label">Settings</span><span class="summary-meta">Next-start resources</span></summary>
+    <div class="settings-fields glass">
+      <label for="profile">Operating system</label>
+      <select id="profile"><option value="desktop">Linux · Debian 13</option><option value="android">Android 15</option><option value="windows">Windows · Server 2025 Evaluation</option></select>
+      <label for="memory">Memory · MiB</label>
+      <input id="memory" type="number" min="768" max="16384" value="768" step="1">
+      <label for="cpus">CPUs</label><input id="cpus" type="number" min="1" max="8" value="1" step="1">
+      <label for="display-size">Display size</label><select id="display-size"><option value="800x600">800 × 600</option><option value="1024x768" selected>1024 × 768</option><option value="1280x720">1280 × 720</option><option value="1280x800">1280 × 800</option><option value="1600x900">1600 × 900</option><option value="1920x1080">1920 × 1080</option><option value="720x1280">720 × 1280 · Android</option></select>
+      <label class="check"><input id="network" type="checkbox" checked> Internet access</label>
+      <label class="check"><input id="persistent" type="checkbox" checked> Keep files</label>
+      <p class="hint" id="profile-hint">Debian 13 / Xfce / Firefox ESR. Changes apply on the next start.</p>
+      <div id="custom-settings" hidden><label for="disk-gib">New disk capacity · GiB</label><input id="disk-gib" type="number" min="4" max="512" value="32"><p class="hint">Existing disks keep their size. Add another OS entry for a new disk.</p><label for="firmware">Firmware</label><select id="firmware"><option value="bios">BIOS</option><option value="uefi">UEFI</option></select><label for="boot-device">Boot from</label><select id="boot-device"><option value="media">Installer media</option><option value="disk">System disk</option></select><label for="disk-bus">Disk controller</label><select id="disk-bus"><option value="sata">SATA · broad compatibility</option><option value="virtio">Virtio · guest driver required</option></select><p class="hint">Imported OSes have screen, mouse and keyboard control. Guest command and file tools require compatible software.</p></div>
+      <div class="field-row"><button id="save-settings" class="button button-primary" type="button">Save settings</button><button id="reload-settings" class="button button-quiet" type="button">Reload saved</button></div><p id="save-state" class="hint" role="status" aria-live="polite">Saved settings apply on the next start.</p>
+      <div id="android-apk" hidden><label for="apk-file">Install Android app</label><input id="apk-file" type="file" accept=".apk"><p class="hint">Up to 512 MB. Android must be running.</p></div>
+<div class="appearance-setting"><h3>Appearance</h3><label class="opacity-control" for="panel-opacity">Panel opacity<input id="panel-opacity" type="range" min="2" max="18" value="5"><output id="opacity-value" for="panel-opacity">5%</output></label><label class="check" for="reduce-transparency"><input id="reduce-transparency" type="checkbox"> Solid panels</label><p class="hint">Turn off transparency.</p></div>    </div>
+  </details>
+
+  <details class="disclosure" open><summary><span class="summary-label">OS library</span><span class="summary-meta">Add your own media</span></summary><div class="settings-fields glass"><p class="hint">Put an x86-64 .iso, .qcow2 or .raw file in this folder, then refresh. The original stays untouched.</p><code id="media-folder">media/incoming</code><button id="refresh-media" class="button button-quiet" type="button">Refresh media</button><label for="os-name">OS name</label><input id="os-name" maxlength="60" placeholder="Ubuntu 26.04"><label for="os-media">Installation media or disk image</label><select id="os-media"><option value="">No staged media</option></select><button id="add-os" class="button button-primary" type="button">Add OS</button><p id="os-library" class="hint" aria-live="polite">Loading library…</p></div></details>
+  <details class="disclosure"><summary><span class="summary-label">Agent bridge</span><span class="summary-meta">CLI and MCP</span></summary><div class="settings-fields glass"><p id="bridge-state" class="hint">Local service · stdio MCP · scoped file exchange</p><p class="hint">Start-AgenticVM-Service.cmd starts the service. Run Configure-Agent-Bridge.cmd after moving this folder, then copy the generated configuration into your agent.</p><label for="bridge-config">MCP configuration</label><textarea id="bridge-config" readonly rows="12" spellcheck="false"></textarea><label for="exchange-folder">Host exchange</label><input id="exchange-folder" value="runtime/glass-app/exchange" readonly><p class="hint">No API key is needed. Commands run inside the selected guest.</p></div></details>
+
+</section></main></div></body></html>

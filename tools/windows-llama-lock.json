@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11711/llama-b11711-bin-win-cpu-x64.zip",
+  "path": "downloads/enrollment/llama-b11711-bin-win-cpu-x64.zip",
+  "bytes": 19613045,
+  "sha256": "adfed8d2d78d5ca2fa05109708528ac80e95111c644c287cd6a3c5b94fadda6a",
+  "digest_source": "GitHub release b11711 asset digest from the upstream publisher"
+}

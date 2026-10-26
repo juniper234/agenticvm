@@ -1,0 +1,2449 @@
+{
+  "format": 2,
+  "os": "Debian GNU/Linux",
+  "release": "13",
+  "codename": "trixie",
+  "architecture": "amd64",
+  "requested": [
+    "base-files",
+    "base-passwd",
+    "busybox-static",
+    "openssl",
+    "openssh-server",
+    "openssh-client",
+    "python3",
+    "ca-certificates",
+    "e2fsprogs",
+    "procps",
+    "kmod",
+    "iproute2"
+  ],
+  "essential": [
+    "base-files",
+    "base-passwd",
+    "bash",
+    "bsdutils",
+    "coreutils",
+    "dash",
+    "debianutils",
+    "diffutils",
+    "dpkg",
+    "findutils",
+    "grep",
+    "gzip",
+    "hostname",
+    "init-system-helpers",
+    "libc-bin",
+    "ncurses-base",
+    "ncurses-bin",
+    "perl-base",
+    "sed",
+    "sysvinit-utils",
+    "tar",
+    "util-linux"
+  ],
+  "trust": "Pinned Debian archive keys; gpgv InRelease; SHA256 Packages.xz and .deb",
+  "keys": [
+    {
+      "name": "archive-key-12.asc",
+      "url": "https://ftp-master.debian.org/keys/archive-key-12.asc",
+      "sha256": "c2a9a16fde95e037bafd0fa6b7e31f41b4ff1e85851de5558f19a2a2f0e955e2",
+      "fingerprint": "B8B80B5B623EAB6AD8775C45B7C5D7D6350947F8"
+    },
+    {
+      "name": "archive-key-12-security.asc",
+      "url": "https://ftp-master.debian.org/keys/archive-key-12-security.asc",
+      "sha256": "74f81645b4e3156d1e9a88c8dd9259271b89c7099d64af89a2a6996b592faa1f",
+      "fingerprint": "05AB90340C0C5E797F44A8C8254CF3B5AEC0A8F0"
+    },
+    {
+      "name": "archive-key-13.asc",
+      "url": "https://ftp-master.debian.org/keys/archive-key-13.asc",
+      "sha256": "6f1d277429dd7ffedcc6f8688a7ad9a458859b1139ffa026d1eeaadcbffb0da7",
+      "fingerprint": "04B54C3CDCA79751B16BC6B5225629DF75B188BD"
+    },
+    {
+      "name": "archive-key-13-security.asc",
+      "url": "https://ftp-master.debian.org/keys/archive-key-13-security.asc",
+      "sha256": "844c07d242db37f283afab9d5531270a0550841e90f9f1a9c3bd599722b808b7",
+      "fingerprint": "5E04A1E3223A19A20706E20F9904613D4CCE68C6"
+    },
+    {
+      "name": "release-13.asc",
+      "url": "https://ftp-master.debian.org/keys/release-13.asc",
+      "sha256": "4d097bb93f83d731f475c5b92a0c2fcf108cfce1d4932792fca72d00b48d198b",
+      "fingerprint": "41587F7DB8C774BCCF131416762F67A0B2C39DE4"
+    }
+  ],
+  "indexes": [
+    {
+      "repository": "trixie",
+      "release_url": "https://deb.debian.org/debian/dists/trixie/InRelease",
+      "release_sha256": "0584fba32e13e0ab8285fb16c27adea1ec03a73669c18702821094fd6ca86675",
+      "date": "Sat, 12 Sep 2026 07:55:41 UTC",
+      "valid_until": null,
+      "version": "13.7",
+      "url": "https://deb.debian.org/debian/dists/trixie/main/binary-amd64/Packages.xz",
+      "sha256": "7778d3e3f303b7ddb8ce0fe7c8d57473a076c6bf2e8f241f75421d2396352498",
+      "bytes": 9678380,
+      "valid_signatures": [
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED B8B80B5B623EAB6AD8775C45B7C5D7D6350947F8 0",
+        "[GNUPG:] SIG_ID fM8UqijUGAqWJdb90JmZdKIEkBw 2026-09-12 1789199778",
+        "[GNUPG:] KEY_CONSIDERED B8B80B5B623EAB6AD8775C45B7C5D7D6350947F8 0",
+        "[GNUPG:] GOODSIG 6ED0E7B82643E131 Debian Archive Automatic Signing Key (12/bookworm) <ftpmaster@debian.org>",
+        "[GNUPG:] VALIDSIG 4CB50190207B4758A3F73A796ED0E7B82643E131 2026-09-12 1789199778 0 4 0 1 8 01 B8B80B5B623EAB6AD8775C45B7C5D7D6350947F8",
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED 04B54C3CDCA79751B16BC6B5225629DF75B188BD 0",
+        "[GNUPG:] SIG_ID LslL/RevDk/visZTn+fCIVYA9H4 2026-09-12 1789199779",
+        "[GNUPG:] KEY_CONSIDERED 04B54C3CDCA79751B16BC6B5225629DF75B188BD 0",
+        "[GNUPG:] GOODSIG 78DBA3BC47EF2265 Debian Archive Automatic Signing Key (13/trixie) <ftpmaster@debian.org>",
+        "[GNUPG:] VALIDSIG B8E5F13176D2A7A75220028078DBA3BC47EF2265 2026-09-12 1789199779 0 4 0 1 8 01 04B54C3CDCA79751B16BC6B5225629DF75B188BD",
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED 41587F7DB8C774BCCF131416762F67A0B2C39DE4 0",
+        "[GNUPG:] SIG_ID tBl+SI6uuFq+8fkokvwiPkG+UgQ 2026-09-12 1789199867",
+        "[GNUPG:] KEY_CONSIDERED 41587F7DB8C774BCCF131416762F67A0B2C39DE4 0",
+        "[GNUPG:] GOODSIG 762F67A0B2C39DE4 Debian Stable Release Key (13/trixie) <debian-release@lists.debian.org>",
+        "[GNUPG:] VALIDSIG 41587F7DB8C774BCCF131416762F67A0B2C39DE4 2026-09-12 1789199867 0 4 0 22 8 01 41587F7DB8C774BCCF131416762F67A0B2C39DE4"
+      ]
+    },
+    {
+      "repository": "trixie-security",
+      "release_url": "https://security.debian.org/debian-security/dists/trixie-security/InRelease",
+      "release_sha256": "90797145be567369fde5525b515bfa6f2c0c0f20c621ee901904fa06a5a763bd",
+      "date": "Fri, 16 Oct 2026 21:02:22 UTC",
+      "valid_until": "Fri, 23 Oct 2026 21:02:22 UTC",
+      "version": "13",
+      "url": "https://security.debian.org/debian-security/dists/trixie-security/main/binary-amd64/Packages.xz",
+      "sha256": "ecda93f2685edb274c26b06e354a2ffa9920ebd764225974bc5df506c63a6f61",
+      "bytes": 269152,
+      "valid_signatures": [
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED 05AB90340C0C5E797F44A8C8254CF3B5AEC0A8F0 0",
+        "[GNUPG:] SIG_ID KIahtcelw9JLfLGc3YDitn5vMrs 2026-10-16 1792184542",
+        "[GNUPG:] KEY_CONSIDERED 05AB90340C0C5E797F44A8C8254CF3B5AEC0A8F0 0",
+        "[GNUPG:] GOODSIG BDE6D2B9216EC7A8 Debian Security Archive Automatic Signing Key (12/bookworm) <ftpmaster@debian.org>",
+        "[GNUPG:] VALIDSIG B0CAB9266E8C3929798B3EEEBDE6D2B9216EC7A8 2026-10-16 1792184542 0 4 0 1 8 01 05AB90340C0C5E797F44A8C8254CF3B5AEC0A8F0",
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED 5E04A1E3223A19A20706E20F9904613D4CCE68C6 0",
+        "[GNUPG:] SIG_ID L271NUifASqqB79yfRVD5r2QBpw 2026-10-16 1792184543",
+        "[GNUPG:] KEY_CONSIDERED 5E04A1E3223A19A20706E20F9904613D4CCE68C6 0",
+        "[GNUPG:] GOODSIG 8E9F831205B4BA95 Debian Security Archive Automatic Signing Key (13/trixie) <ftpmaster@debian.org>",
+        "[GNUPG:] VALIDSIG 89C87ACEA5DD6B8E6A7068808E9F831205B4BA95 2026-10-16 1792184543 0 4 0 1 8 01 5E04A1E3223A19A20706E20F9904613D4CCE68C6"
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "name": "adduser",
+      "version": "3.152",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/a/adduser/adduser_3.152_all.deb",
+      "sha256": "e50984d2e1ef6300e3fd51303839842189a077b10cb5cadff1923df10c61c493",
+      "bytes": 190932,
+      "installed_bytes": 438272,
+      "dependencies": [
+        "passwd (>= 1:4.17.2-5)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/adduser/copyright",
+      "origin": "adduser",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "base-files",
+      "version": "13.8+deb13u7",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8+deb13u7_amd64.deb",
+      "sha256": "fcd42bb5cb63f7bfc4326a92541247872206d60a192fdff65ca14eb83ed408b9",
+      "bytes": 88296,
+      "installed_bytes": 512000,
+      "dependencies": [
+        "awk"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/base-files/copyright",
+      "origin": "base-files",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "base-passwd",
+      "version": "3.6.7",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.7_amd64.deb",
+      "sha256": "cf31c6956ab5f65815d9d9ea1615c4f78ecd2893c31119658248a4756cee83e7",
+      "bytes": 53712,
+      "installed_bytes": 278528,
+      "dependencies": [
+        "libc6 (>= 2.34)",
+        "libdebconfclient0 (>= 0.145)",
+        "libselinux1 (>= 3.1~)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/base-passwd/copyright",
+      "origin": "base-passwd",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "bash",
+      "version": "5.2.37-2+b10",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/b/bash/bash_5.2.37-2+b10_amd64.deb",
+      "sha256": "2fd7b04f1b7caa29c4e683f5216e6af354a41e3cdcf6e75394d7cda680f9ab82",
+      "bytes": 1500792,
+      "installed_bytes": 7368704,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libtinfo6 (>= 6)",
+        "base-files (>= 2.1.12)",
+        "debianutils (>= 5.6-0.1)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/bash/copyright",
+      "origin": "bash (5.2.37-2)",
+      "source_commit": null,
+      "homepage": "http://tiswww.case.edu/php/chet/bash/bashtop.html"
+    },
+    {
+      "name": "bsdutils",
+      "version": "1:2.41.5-0+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/u/util-linux/bsdutils_2.41.5-0+deb13u1_amd64.deb",
+      "sha256": "d935a5102752a1108bdf1e815c89a84ac88d1949bf049a784178f946a09b14da",
+      "bytes": 110208,
+      "installed_bytes": 410624,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libsystemd0 (>= 254)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/bsdutils/copyright",
+      "origin": "util-linux (2.41.5-0+deb13u1)",
+      "source_commit": null,
+      "homepage": "https://github.com/util-linux/util-linux"
+    },
+    {
+      "name": "busybox-static",
+      "version": "1:1.37.0-6+b9",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/b/busybox/busybox-static_1.37.0-6+b9_amd64.deb",
+      "sha256": "598a3fd92bdafc34cd81196b2952ad36e910e47a4ecf162f8ce5e8e262598e53",
+      "bytes": 955316,
+      "installed_bytes": 2116608,
+      "dependencies": [],
+      "license": "Debian-package-copyright:/usr/share/doc/busybox-static/copyright",
+      "origin": "busybox (1:1.37.0-6)",
+      "source_commit": null,
+      "homepage": "http://www.busybox.net"
+    },
+    {
+      "name": "ca-certificates",
+      "version": "20250419",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20250419_all.deb",
+      "sha256": "ef590f89563aa4b46c8260d49d1cea0fc1b181d19e8df3782694706adf05c184",
+      "bytes": 161704,
+      "installed_bytes": 399360,
+      "dependencies": [
+        "openssl (>= 1.1.1)",
+        "debconf (>= 0.5) | debconf-2.0"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/ca-certificates/copyright",
+      "origin": "ca-certificates",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "coreutils",
+      "version": "9.7-3",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7-3_amd64.deb",
+      "sha256": "1299ab6f9389a288eb2f5f3dd222c26cc777b9a2d5ecb6ee4cbd340cebcdada2",
+      "bytes": 3023556,
+      "installed_bytes": 18899968,
+      "dependencies": [
+        "libacl1 (>= 2.2.23)",
+        "libattr1 (>= 1:2.4.48)",
+        "libc6 (>= 2.38)",
+        "libcap2 (>= 1:2.10)",
+        "libgmp10 (>= 2:6.3.0+dfsg)",
+        "libselinux1 (>= 3.1~)",
+        "libssl3t64 (>= 3.0.0)",
+        "libsystemd0 (>= 254)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/coreutils/copyright",
+      "origin": "coreutils",
+      "source_commit": null,
+      "homepage": "https://gnu.org/software/coreutils"
+    },
+    {
+      "name": "dash",
+      "version": "0.5.12-12",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/d/dash/dash_0.5.12-12_amd64.deb",
+      "sha256": "a8902cb6d8650134764a25fb80aec8589d858ef71ece1680a62e84816c37bb04",
+      "bytes": 98504,
+      "installed_bytes": 211968,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "debianutils (>= 5.6-0.1)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/dash/copyright",
+      "origin": "dash",
+      "source_commit": null,
+      "homepage": "http://gondor.apana.org.au/~herbert/dash/"
+    },
+    {
+      "name": "debconf",
+      "version": "1.5.91",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.91_all.deb",
+      "sha256": "1ddc7e6c5925f748eefb7ca811d98e049f18c158bb21fbc7e122262ce6011e49",
+      "bytes": 121088,
+      "installed_bytes": 508928,
+      "dependencies": [],
+      "license": "Debian-package-copyright:/usr/share/doc/debconf/copyright",
+      "origin": "debconf",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "debianutils",
+      "version": "5.23.2",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.23.2_amd64.deb",
+      "sha256": "720e43fda316676076498b4224ad3318049deafe60cc7c601011048de03ee97d",
+      "bytes": 92360,
+      "installed_bytes": 230400,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/debianutils/copyright",
+      "origin": "debianutils",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "diffutils",
+      "version": "1:3.10-4",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10-4_amd64.deb",
+      "sha256": "d3412669f7ae53ba895c3a509620ea7494ec1a36faa204c5215442ced381a479",
+      "bytes": 386504,
+      "installed_bytes": 1810432,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/diffutils/copyright",
+      "origin": "diffutils",
+      "source_commit": null,
+      "homepage": "https://www.gnu.org/software/diffutils/"
+    },
+    {
+      "name": "dpkg",
+      "version": "1.22.22",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.22_amd64.deb",
+      "sha256": "3e800c6d75e8e709007ed1c356e5fa8509a75c1694fb0a1183709abc9cfdc1f3",
+      "bytes": 1537216,
+      "installed_bytes": 6745088,
+      "dependencies": [
+        "libbz2-1.0",
+        "libc6 (>= 2.38)",
+        "liblzma5 (>= 5.4.0)",
+        "libmd0 (>= 0.0.0)",
+        "libselinux1 (>= 3.1~)",
+        "libzstd1 (>= 1.5.5)",
+        "zlib1g (>= 1:1.1.4)",
+        "tar (>= 1.28-1)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/dpkg/copyright",
+      "origin": "dpkg",
+      "source_commit": null,
+      "homepage": "https://wiki.debian.org/Teams/Dpkg"
+    },
+    {
+      "name": "e2fsprogs",
+      "version": "1.47.2-3+b12",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.2-3+b12_amd64.deb",
+      "sha256": "e9e638eb3e22b5f14d01ce0b28aa512a5a22fcc0e70d1c733444579b67ea236b",
+      "bytes": 591288,
+      "installed_bytes": 1573888,
+      "dependencies": [
+        "libblkid1 (>= 2.36)",
+        "libc6 (>= 2.38)",
+        "libcom-err2 (>= 1.43.9)",
+        "libext2fs2t64 (= 1.47.2-3+b12)",
+        "libss2 (>= 1.38)",
+        "libuuid1 (>= 2.16)",
+        "logsave"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/e2fsprogs/copyright",
+      "origin": "e2fsprogs (1.47.2-3)",
+      "source_commit": null,
+      "homepage": "http://e2fsprogs.sourceforge.net"
+    },
+    {
+      "name": "findutils",
+      "version": "4.10.0-3",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0-3_amd64.deb",
+      "sha256": "3edf02b016456b6a98cefdbab99c5ce6f829b786f63affe970badea221aecfc7",
+      "bytes": 700008,
+      "installed_bytes": 2211840,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libselinux1 (>= 3.1~)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/findutils/copyright",
+      "origin": "findutils",
+      "source_commit": null,
+      "homepage": "https://savannah.gnu.org/projects/findutils/"
+    },
+    {
+      "name": "gcc-14-base",
+      "version": "14.2.0-19",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/g/gcc-14/gcc-14-base_14.2.0-19_amd64.deb",
+      "sha256": "5b6825de4263824b78c4c51f6476414f3b4e89c2ab63e81dc8b9b5501e867cf6",
+      "bytes": 49432,
+      "installed_bytes": 114688,
+      "dependencies": [],
+      "license": "Debian-package-copyright:/usr/share/doc/gcc-14-base/copyright",
+      "origin": "gcc-14",
+      "source_commit": null,
+      "homepage": "http://gcc.gnu.org/"
+    },
+    {
+      "name": "grep",
+      "version": "3.11-4",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/g/grep/grep_3.11-4_amd64.deb",
+      "sha256": "2d78ed07d86a530ebf538f05cb2415f37c8daf908596bc32fc2563cc7e88c55a",
+      "bytes": 431488,
+      "installed_bytes": 1296384,
+      "dependencies": [
+        "libc6 (>= 2.34)",
+        "libpcre2-8-0 (>= 10.32)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/grep/copyright",
+      "origin": "grep",
+      "source_commit": null,
+      "homepage": "https://www.gnu.org/software/grep/"
+    },
+    {
+      "name": "gzip",
+      "version": "1.13-1+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13-1+deb13u1_amd64.deb",
+      "sha256": "74cf12212beee4ab8d473bdc0107abf9e8cef737492198e2f4944a19f142b0ac",
+      "bytes": 138608,
+      "installed_bytes": 262144,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/gzip/copyright",
+      "origin": "gzip",
+      "source_commit": null,
+      "homepage": "https://www.gnu.org/software/gzip/"
+    },
+    {
+      "name": "hostname",
+      "version": "3.25",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/h/hostname/hostname_3.25_amd64.deb",
+      "sha256": "9c2a27e5d4d87137211fe46631b05b2ee8892ec76aae926304e4485ba02e1015",
+      "bytes": 11024,
+      "installed_bytes": 51200,
+      "dependencies": [
+        "libc6 (>= 2.34)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/hostname/copyright",
+      "origin": "hostname",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "init-system-helpers",
+      "version": "1.69~deb13u1",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.69~deb13u1_all.deb",
+      "sha256": "addf78073e1cbc5a5508937e11d2571055e29835e00ee8fab52a66775649378f",
+      "bytes": 39360,
+      "installed_bytes": 136192,
+      "dependencies": [],
+      "license": "Debian-package-copyright:/usr/share/doc/init-system-helpers/copyright",
+      "origin": "init-system-helpers",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "iproute2",
+      "version": "6.15.0-1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/i/iproute2/iproute2_6.15.0-1_amd64.deb",
+      "sha256": "7b2dcade4a83ded723fcab21c5a53c47f29352c9c5e1661a089a1e481b3fb48a",
+      "bytes": 1089184,
+      "installed_bytes": 3864576,
+      "dependencies": [
+        "debconf (>= 0.5) | debconf-2.0",
+        "libbpf1 (>= 1:0.6.0)",
+        "libc6 (>= 2.38)",
+        "libcap2 (>= 1:2.10)",
+        "libdb5.3t64",
+        "libelf1t64 (>= 0.131)",
+        "libmnl0 (>= 1.0.3-4~)",
+        "libselinux1 (>= 3.1~)",
+        "libtirpc3t64 (>= 1.0.2)",
+        "libxtables12 (>= 1.6.0+snapshot20161117)",
+        "libcap2-bin"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/iproute2/copyright",
+      "origin": "iproute2",
+      "source_commit": null,
+      "homepage": "https://wiki.linuxfoundation.org/networking/iproute2"
+    },
+    {
+      "name": "kmod",
+      "version": "34.2-2",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/k/kmod/kmod_34.2-2_amd64.deb",
+      "sha256": "d56f9311beb17cd15447d11d91fd4de94d23a47d4619e8806b1b807b40c72e53",
+      "bytes": 95704,
+      "installed_bytes": 261120,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libssl3t64 (>= 3.0.0)",
+        "libkmod2 (= 34.2-2)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/kmod/copyright",
+      "origin": "kmod",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "libacl1",
+      "version": "2.3.2-2+b1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/a/acl/libacl1_2.3.2-2+b1_amd64.deb",
+      "sha256": "08074f01e384bc07c0c2d79a58cf4a6523f71cf75d1808101c79617656c9a39d",
+      "bytes": 32860,
+      "installed_bytes": 75776,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libacl1/copyright",
+      "origin": "acl (2.3.2-2)",
+      "source_commit": null,
+      "homepage": "https://savannah.nongnu.org/projects/acl/"
+    },
+    {
+      "name": "libapparmor1",
+      "version": "4.1.0-1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/a/apparmor/libapparmor1_4.1.0-1_amd64.deb",
+      "sha256": "4158976c77038b93021967f425b4cc505df18c4f5e3f444732399e7ed4af4419",
+      "bytes": 43688,
+      "installed_bytes": 117760,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libapparmor1/copyright",
+      "origin": "apparmor",
+      "source_commit": null,
+      "homepage": "https://apparmor.net/"
+    },
+    {
+      "name": "libattr1",
+      "version": "1:2.5.2-3",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/a/attr/libattr1_2.5.2-3_amd64.deb",
+      "sha256": "606b5ee12ea2786be607a17f40c1fb5e65c76ceaff66665bdf8f8c6c1b71d1fb",
+      "bytes": 22876,
+      "installed_bytes": 61440,
+      "dependencies": [
+        "libc6 (>= 2.4)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libattr1/copyright",
+      "origin": "attr",
+      "source_commit": null,
+      "homepage": "https://savannah.nongnu.org/projects/attr/"
+    },
+    {
+      "name": "libaudit-common",
+      "version": "1:4.0.2-2+deb13u1",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/a/audit/libaudit-common_4.0.2-2+deb13u1_all.deb",
+      "sha256": "b9d32e5ff04fd747aacb7d6b3ebbbbf734ddefb2f1695f0b1b2a4b5e51b1052e",
+      "bytes": 12812,
+      "installed_bytes": 25600,
+      "dependencies": [],
+      "license": "Debian-package-copyright:/usr/share/doc/libaudit-common/copyright",
+      "origin": "audit",
+      "source_commit": null,
+      "homepage": "https://people.redhat.com/sgrubb/audit/"
+    },
+    {
+      "name": "libaudit1",
+      "version": "1:4.0.2-2+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/a/audit/libaudit1_4.0.2-2+deb13u1_amd64.deb",
+      "sha256": "3d1dd3f031a56f01b747e2acc0e14575212580e6fa63d800c44cb0a31f1edfd7",
+      "bytes": 57680,
+      "installed_bytes": 202752,
+      "dependencies": [
+        "libaudit-common (>= 1:4.0.2-2+deb13u1)",
+        "libc6 (>= 2.38)",
+        "libcap-ng0 (>= 0.7.9)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libaudit1/copyright",
+      "origin": "audit",
+      "source_commit": null,
+      "homepage": "https://people.redhat.com/sgrubb/audit/"
+    },
+    {
+      "name": "libblkid1",
+      "version": "2.41.5-0+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/u/util-linux/libblkid1_2.41.5-0+deb13u1_amd64.deb",
+      "sha256": "81535f3c2c0efc732965907c8749103a0a26377c761622c9ce39b4c92dcde52f",
+      "bytes": 171612,
+      "installed_bytes": 463872,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libblkid1/copyright",
+      "origin": "util-linux",
+      "source_commit": null,
+      "homepage": "https://github.com/util-linux/util-linux"
+    },
+    {
+      "name": "libbpf1",
+      "version": "1:1.5.0-3",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libb/libbpf/libbpf1_1.5.0-3_amd64.deb",
+      "sha256": "04c96ead3024888d80d08c8d08cc8cf4589f4614627acc69519f87ffb5adc1c2",
+      "bytes": 168832,
+      "installed_bytes": 462848,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libelf1t64 (>= 0.144)",
+        "zlib1g (>= 1:1.2.3.3)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libbpf1/copyright",
+      "origin": "libbpf (1.5.0-3)",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "libbsd0",
+      "version": "0.12.2-2",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libb/libbsd/libbsd0_0.12.2-2_amd64.deb",
+      "sha256": "e5a85986fa6bec3307ab1bc860736b478b331882bc45e17675a7bdf88eecb43a",
+      "bytes": 130968,
+      "installed_bytes": 219136,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libmd0 (>= 1.0.3-2)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libbsd0/copyright",
+      "origin": "libbsd",
+      "source_commit": null,
+      "homepage": "https://libbsd.freedesktop.org/"
+    },
+    {
+      "name": "libbz2-1.0",
+      "version": "1.0.8-6",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/b/bzip2/libbz2-1.0_1.0.8-6_amd64.deb",
+      "sha256": "cba4cda04244b5e481bb15524bc3c983a7d1b6f330013b9b381706a2fcb65310",
+      "bytes": 37912,
+      "installed_bytes": 98304,
+      "dependencies": [
+        "libc6 (>= 2.4)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libbz2-1.0/copyright",
+      "origin": "bzip2",
+      "source_commit": null,
+      "homepage": "https://sourceware.org/bzip2/"
+    },
+    {
+      "name": "libc-bin",
+      "version": "2.41-12+deb13u4",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/g/glibc/libc-bin_2.41-12+deb13u4_amd64.deb",
+      "sha256": "dc8c79647fe3a5f37f72a400414f70263d0212f010ff2c09f990e30d91e38d1c",
+      "bytes": 638452,
+      "installed_bytes": 2172928,
+      "dependencies": [
+        "libc6 (>> 2.41)",
+        "libc6 (<< 2.42)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libc-bin/copyright",
+      "origin": "glibc",
+      "source_commit": null,
+      "homepage": "https://www.gnu.org/software/libc/libc.html"
+    },
+    {
+      "name": "libc6",
+      "version": "2.41-12+deb13u4",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/g/glibc/libc6_2.41-12+deb13u4_amd64.deb",
+      "sha256": "967aa62605721081c3eb2a17650611a792aa802d76a6511d1840242623d204c9",
+      "bytes": 2846580,
+      "installed_bytes": 13543424,
+      "dependencies": [
+        "libgcc-s1"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libc6/copyright",
+      "origin": "glibc",
+      "source_commit": null,
+      "homepage": "https://www.gnu.org/software/libc/libc.html"
+    },
+    {
+      "name": "libcap-ng0",
+      "version": "0.8.5-4+b1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng0_0.8.5-4+b1_amd64.deb",
+      "sha256": "20a9e4b0619a3eb2566338223bed135dde5a601eaa2f8fdd5f20b94506addcac",
+      "bytes": 17584,
+      "installed_bytes": 67584,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libcap-ng0/copyright",
+      "origin": "libcap-ng (0.8.5-4)",
+      "source_commit": null,
+      "homepage": "https://people.redhat.com/sgrubb/libcap-ng"
+    },
+    {
+      "name": "libcap2",
+      "version": "1:2.75-10+deb13u1+b3",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75-10+deb13u1+b3_amd64.deb",
+      "sha256": "89fc4d34fc7a28ad6f0fcd0c561ab253b9dedf6f77f5a000b47c276c8295bf67",
+      "bytes": 28988,
+      "installed_bytes": 94208,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libcap2/copyright",
+      "origin": "libcap2 (1:2.75-10+deb13u1)",
+      "source_commit": null,
+      "homepage": "https://sites.google.com/site/fullycapable/"
+    },
+    {
+      "name": "libcap2-bin",
+      "version": "1:2.75-10+deb13u1+b3",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libc/libcap2/libcap2-bin_2.75-10+deb13u1+b3_amd64.deb",
+      "sha256": "6404b8ee315ce3eb8e273981650e419ff0e91aed5213d4975a6895f98944ea80",
+      "bytes": 36456,
+      "installed_bytes": 135168,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libcap2 (>= 1:2.63)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libcap2-bin/copyright",
+      "origin": "libcap2 (1:2.75-10+deb13u1)",
+      "source_commit": null,
+      "homepage": "https://sites.google.com/site/fullycapable/"
+    },
+    {
+      "name": "libcbor0.10",
+      "version": "0.10.2-2",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libc/libcbor/libcbor0.10_0.10.2-2_amd64.deb",
+      "sha256": "2457686e375dcb7567ba01da6638a0711e2a55725d084d65de44dd11bb1f52e2",
+      "bytes": 28296,
+      "installed_bytes": 96256,
+      "dependencies": [
+        "libc6 (>= 2.14)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libcbor0.10/copyright",
+      "origin": "libcbor",
+      "source_commit": null,
+      "homepage": "https://github.com/PJK/libcbor"
+    },
+    {
+      "name": "libcom-err2",
+      "version": "1.47.2-3+b12",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/e/e2fsprogs/libcom-err2_1.47.2-3+b12_amd64.deb",
+      "sha256": "bd43e020b8fed399db3eebf098111f10fba4c436fff99ccad72cc7e27c9764ec",
+      "bytes": 25036,
+      "installed_bytes": 65536,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libcom-err2/copyright",
+      "origin": "e2fsprogs (1.47.2-3)",
+      "source_commit": null,
+      "homepage": "http://e2fsprogs.sourceforge.net"
+    },
+    {
+      "name": "libcrypt1",
+      "version": "1:4.4.38-1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libx/libxcrypt/libcrypt1_4.4.38-1_amd64.deb",
+      "sha256": "0ebc144d662e3197982d1bf3a7b8b35ca845e54c68811de0328b1f0d7c67585c",
+      "bytes": 90072,
+      "installed_bytes": 239616,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libcrypt1/copyright",
+      "origin": "libxcrypt",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "libdb5.3t64",
+      "version": "5.3.28+dfsg2-9",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/d/db5.3/libdb5.3t64_5.3.28+dfsg2-9_amd64.deb",
+      "sha256": "18d02510ee78b67e4504ba050176797a200ff24214a7cd318082ab60ad7bf3fc",
+      "bytes": 703676,
+      "installed_bytes": 1898496,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libdb5.3t64/copyright",
+      "origin": "db5.3",
+      "source_commit": null,
+      "homepage": "http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html"
+    },
+    {
+      "name": "libdebconfclient0",
+      "version": "0.280",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/c/cdebconf/libdebconfclient0_0.280_amd64.deb",
+      "sha256": "25acadc8b394bc86d05df16e70975e523f8f839a7d8d6d5e22c1cafdcef741aa",
+      "bytes": 10632,
+      "installed_bytes": 38912,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libdebconfclient0/copyright",
+      "origin": "cdebconf",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "libedit2",
+      "version": "3.1-20250104-1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libe/libedit/libedit2_3.1-20250104-1_amd64.deb",
+      "sha256": "b002ea172b9c1e34a67bc497c523c67bb74c3f0a4e98113cb083990a1f1d3bfe",
+      "bytes": 93832,
+      "installed_bytes": 268288,
+      "dependencies": [
+        "libbsd0 (>= 0.1.3)",
+        "libc6 (>= 2.38)",
+        "libtinfo6 (>= 6)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libedit2/copyright",
+      "origin": "libedit",
+      "source_commit": null,
+      "homepage": "https://www.thrysoee.dk/editline/"
+    },
+    {
+      "name": "libelf1t64",
+      "version": "0.192-4",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/e/elfutils/libelf1t64_0.192-4_amd64.deb",
+      "sha256": "94497b7e17b6f574a0605b380d454e20d3f01a9c63b70c2a2263f679d30053e1",
+      "bytes": 189408,
+      "installed_bytes": 1257472,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libzstd1 (>= 1.5.5)",
+        "zlib1g (>= 1:1.1.4)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libelf1t64/copyright",
+      "origin": "elfutils",
+      "source_commit": null,
+      "homepage": "https://sourceware.org/elfutils/"
+    },
+    {
+      "name": "libexpat1",
+      "version": "2.9.0-1~deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/e/expat/libexpat1_2.9.0-1~deb13u1_amd64.deb",
+      "sha256": "feff874772cae904ae4d24e917b35664952bec4b4ae9100a4edda5a7fa746832",
+      "bytes": 125744,
+      "installed_bytes": 437248,
+      "dependencies": [
+        "libc6 (>= 2.36)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libexpat1/copyright",
+      "origin": "expat",
+      "source_commit": null,
+      "homepage": "https://libexpat.github.io/"
+    },
+    {
+      "name": "libext2fs2t64",
+      "version": "1.47.2-3+b12",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/e/e2fsprogs/libext2fs2t64_1.47.2-3+b12_amd64.deb",
+      "sha256": "9f5783fa48239e42260d41846fbc6c8b19c233251063524456096195660eaa09",
+      "bytes": 212664,
+      "installed_bytes": 570368,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libext2fs2t64/copyright",
+      "origin": "e2fsprogs (1.47.2-3)",
+      "source_commit": null,
+      "homepage": "http://e2fsprogs.sourceforge.net"
+    },
+    {
+      "name": "libffi8",
+      "version": "3.4.8-2",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libf/libffi/libffi8_3.4.8-2_amd64.deb",
+      "sha256": "0ebdc340de33333639c3c63874cd4b15ac2e83dfa1ef3053b7eefaf4919f4f68",
+      "bytes": 24144,
+      "installed_bytes": 73728,
+      "dependencies": [
+        "libc6 (>= 2.34)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libffi8/copyright",
+      "origin": "libffi",
+      "source_commit": null,
+      "homepage": "https://sourceware.org/libffi/"
+    },
+    {
+      "name": "libfido2-1",
+      "version": "1.15.0-1+b1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libf/libfido2/libfido2-1_1.15.0-1+b1_amd64.deb",
+      "sha256": "094fc0fe20c652be848ab2a8b3793eb03bc4327140ebd232145356352004e6c0",
+      "bytes": 78728,
+      "installed_bytes": 256000,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libcbor0.10 (>= 0.10.2)",
+        "libssl3t64 (>= 3.0.0)",
+        "libudev1 (>= 183)",
+        "zlib1g (>= 1:1.1.4)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libfido2-1/copyright",
+      "origin": "libfido2 (1.15.0-1)",
+      "source_commit": null,
+      "homepage": "https://developers.yubico.com/libfido2/"
+    },
+    {
+      "name": "libgcc-s1",
+      "version": "14.2.0-19",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/g/gcc-14/libgcc-s1_14.2.0-19_amd64.deb",
+      "sha256": "3c71917b490d1a17aed43196a2787a256ecf060526cdb20216a74bedc061b150",
+      "bytes": 72772,
+      "installed_bytes": 201728,
+      "dependencies": [
+        "gcc-14-base (= 14.2.0-19)",
+        "libc6 (>= 2.35)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libgcc-s1/copyright",
+      "origin": "gcc-14",
+      "source_commit": null,
+      "homepage": "http://gcc.gnu.org/"
+    },
+    {
+      "name": "libgmp10",
+      "version": "2:6.3.0+dfsg-3",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/g/gmp/libgmp10_6.3.0+dfsg-3_amd64.deb",
+      "sha256": "d0d0265eb01770f17afd0f7c8c0622f80479dcfbbe13653a0debeec61464e622",
+      "bytes": 560220,
+      "installed_bytes": 903168,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libgmp10/copyright",
+      "origin": "gmp",
+      "source_commit": null,
+      "homepage": "https://gmplib.org/"
+    },
+    {
+      "name": "libgssapi-krb5-2",
+      "version": "1.21.3-5+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/k/krb5/libgssapi-krb5-2_1.21.3-5+deb13u1_amd64.deb",
+      "sha256": "30847c1fde4240567d7ed3aeab4f655dd591203758b857e85e824045aae70299",
+      "bytes": 138356,
+      "installed_bytes": 444416,
+      "dependencies": [
+        "libkrb5-3 (= 1.21.3-5+deb13u1)",
+        "libc6 (>= 2.38)",
+        "libcom-err2 (>= 1.43.9)",
+        "libk5crypto3 (>= 1.20)",
+        "libkrb5support0 (= 1.21.3-5+deb13u1)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libgssapi-krb5-2/copyright",
+      "origin": "krb5",
+      "source_commit": null,
+      "homepage": "https://web.mit.edu/kerberos/"
+    },
+    {
+      "name": "libk5crypto3",
+      "version": "1.21.3-5+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/k/krb5/libk5crypto3_1.21.3-5+deb13u1_amd64.deb",
+      "sha256": "7da07ee674b47f1f0be7cc89317c25310086a1f1761217d0f72e6ae2c5a69b84",
+      "bytes": 81152,
+      "installed_bytes": 272384,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libkrb5support0 (= 1.21.3-5+deb13u1)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libk5crypto3/copyright",
+      "origin": "krb5",
+      "source_commit": null,
+      "homepage": "https://web.mit.edu/kerberos/"
+    },
+    {
+      "name": "libkeyutils1",
+      "version": "1.6.3-6",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/k/keyutils/libkeyutils1_1.6.3-6_amd64.deb",
+      "sha256": "0b11ad17be0300b63ad4eeb4c6450fed24d34b7b740f23e5363dcb29ee6d5eba",
+      "bytes": 9456,
+      "installed_bytes": 41984,
+      "dependencies": [
+        "libc6 (>= 2.14)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libkeyutils1/copyright",
+      "origin": "keyutils",
+      "source_commit": null,
+      "homepage": "https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git"
+    },
+    {
+      "name": "libkmod2",
+      "version": "34.2-2",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/k/kmod/libkmod2_34.2-2_amd64.deb",
+      "sha256": "ee6c50ebac79aa9795e8bf9aa01d94c99984d09d22598c66be0f8ba917b62179",
+      "bytes": 63196,
+      "installed_bytes": 147456,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libssl3t64 (>= 3.0.0)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libkmod2/copyright",
+      "origin": "kmod",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "libkrb5-3",
+      "version": "1.21.3-5+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/k/krb5/libkrb5-3_1.21.3-5+deb13u1_amd64.deb",
+      "sha256": "47d71d6a7f2e59b9bae5f89602397594805113b95889ad18fa703cd53abafc97",
+      "bytes": 326056,
+      "installed_bytes": 1099776,
+      "dependencies": [
+        "libkrb5support0 (= 1.21.3-5+deb13u1)",
+        "libc6 (>= 2.38)",
+        "libcom-err2 (>= 1.43.9)",
+        "libk5crypto3 (>= 1.20)",
+        "libkeyutils1 (>= 1.5.9)",
+        "libssl3t64 (>= 3.0.0)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libkrb5-3/copyright",
+      "origin": "krb5",
+      "source_commit": null,
+      "homepage": "https://web.mit.edu/kerberos/"
+    },
+    {
+      "name": "libkrb5support0",
+      "version": "1.21.3-5+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/k/krb5/libkrb5support0_1.21.3-5+deb13u1_amd64.deb",
+      "sha256": "3a0acd8b37955c0e102c756b52c97df2a31f67b96453c35dab70df218d309117",
+      "bytes": 33124,
+      "installed_bytes": 140288,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libkrb5support0/copyright",
+      "origin": "krb5",
+      "source_commit": null,
+      "homepage": "https://web.mit.edu/kerberos/"
+    },
+    {
+      "name": "liblastlog2-2",
+      "version": "2.41.5-0+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/u/util-linux/liblastlog2-2_2.41.5-0+deb13u1_amd64.deb",
+      "sha256": "abb76aecbf51479e6e193873dfddaa1b88667dc0b1db82a11286a67550ba1557",
+      "bytes": 28772,
+      "installed_bytes": 76800,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libsqlite3-0 (>= 3.5.9)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/liblastlog2-2/copyright",
+      "origin": "util-linux",
+      "source_commit": null,
+      "homepage": "https://github.com/util-linux/util-linux"
+    },
+    {
+      "name": "liblzma5",
+      "version": "5.8.1-1+deb13u2",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/x/xz-utils/liblzma5_5.8.1-1+deb13u2_amd64.deb",
+      "sha256": "b38acab30f295bf1066a6632e31cbd0a1980f2924b38040cda131d5dea5384ec",
+      "bytes": 309696,
+      "installed_bytes": 445440,
+      "dependencies": [
+        "libc6 (>= 2.34)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/liblzma5/copyright",
+      "origin": "xz-utils",
+      "source_commit": null,
+      "homepage": "https://tukaani.org/xz/"
+    },
+    {
+      "name": "libmd0",
+      "version": "1.1.0-2+b1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libm/libmd/libmd0_1.1.0-2+b1_amd64.deb",
+      "sha256": "7244ec3839b61fac0c1884fe08aaa040f26e8f1f35f1f5d3482eacefd30d1b44",
+      "bytes": 36272,
+      "installed_bytes": 96256,
+      "dependencies": [
+        "libc6 (>= 2.33)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libmd0/copyright",
+      "origin": "libmd (1.1.0-2)",
+      "source_commit": null,
+      "homepage": "https://www.hadrons.org/software/libmd/"
+    },
+    {
+      "name": "libmnl0",
+      "version": "1.0.5-3",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libm/libmnl/libmnl0_1.0.5-3_amd64.deb",
+      "sha256": "4ec9c1096e0b954e3bdb03a62314ee7f49999045d3d55be3e4ded520ffc9baf5",
+      "bytes": 11928,
+      "installed_bytes": 46080,
+      "dependencies": [
+        "libc6 (>= 2.14)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libmnl0/copyright",
+      "origin": "libmnl",
+      "source_commit": null,
+      "homepage": "https://netfilter.org/projects/libmnl/"
+    },
+    {
+      "name": "libmount1",
+      "version": "2.41.5-0+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/u/util-linux/libmount1_2.41.5-0+deb13u1_amd64.deb",
+      "sha256": "6d00f45f2e80e078e906e3eedecd3ba6913e39fef49bff361ee583f17f00ec05",
+      "bytes": 210408,
+      "installed_bytes": 578560,
+      "dependencies": [
+        "libblkid1 (= 2.41.5-0+deb13u1)",
+        "libc6 (>= 2.38)",
+        "libselinux1 (>= 3.1~)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libmount1/copyright",
+      "origin": "util-linux",
+      "source_commit": null,
+      "homepage": "https://github.com/util-linux/util-linux"
+    },
+    {
+      "name": "libncursesw6",
+      "version": "6.5+20250216-2",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/n/ncurses/libncursesw6_6.5+20250216-2_amd64.deb",
+      "sha256": "47baa2e11579583654583a066b69bd5a5d2f22423081f707ed6c0c3ba6d538b7",
+      "bytes": 135484,
+      "installed_bytes": 429056,
+      "dependencies": [
+        "libtinfo6 (= 6.5+20250216-2)",
+        "libc6 (>= 2.34)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libncursesw6/copyright",
+      "origin": "ncurses",
+      "source_commit": null,
+      "homepage": "https://invisible-island.net/ncurses/"
+    },
+    {
+      "name": "libpam-modules",
+      "version": "1.7.0-5",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/p/pam/libpam-modules_1.7.0-5_amd64.deb",
+      "sha256": "9679ade117f8775ac0471f48a92652ab8e8dcda4e2ff06de75158cded9cfd83c",
+      "bytes": 178696,
+      "installed_bytes": 945152,
+      "dependencies": [
+        "libaudit1 (>= 1:2.2.1)",
+        "libc6 (>= 2.38)",
+        "libcrypt1 (>= 1:4.3.0)",
+        "libdb5.3t64",
+        "libpam0g (>= 1.4.1)",
+        "libselinux1 (>= 3.1~)",
+        "libsystemd0 (>= 254)",
+        "debconf (>= 0.5) | debconf-2.0",
+        "libpam-modules-bin (= 1.7.0-5)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libpam-modules/copyright",
+      "origin": "pam",
+      "source_commit": null,
+      "homepage": "http://www.linux-pam.org/"
+    },
+    {
+      "name": "libpam-modules-bin",
+      "version": "1.7.0-5",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/p/pam/libpam-modules-bin_1.7.0-5_amd64.deb",
+      "sha256": "cc72066d008444317738e8e931d6131b301466b4e2dd5ef5baa75fb1a45d61a7",
+      "bytes": 49116,
+      "installed_bytes": 210944,
+      "dependencies": [
+        "libaudit1 (>= 1:2.2.1)",
+        "libc6 (>= 2.38)",
+        "libcrypt1 (>= 1:4.3.0)",
+        "libpam0g (>= 0.99.7.1)",
+        "libselinux1 (>= 3.1~)",
+        "libsystemd0 (>= 254)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libpam-modules-bin/copyright",
+      "origin": "pam",
+      "source_commit": null,
+      "homepage": "http://www.linux-pam.org/"
+    },
+    {
+      "name": "libpam-runtime",
+      "version": "1.7.0-5",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/p/pam/libpam-runtime_1.7.0-5_all.deb",
+      "sha256": "b02792c9ed6174db695a653b95ef3629fdac3a73ba1eff1754ab161b5711bfbf",
+      "bytes": 248720,
+      "installed_bytes": 1052672,
+      "dependencies": [
+        "debconf (>= 0.5) | debconf-2.0",
+        "debconf (>= 1.5.19) | cdebconf",
+        "libpam-modules (>= 1.0.1-6)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libpam-runtime/copyright",
+      "origin": "pam",
+      "source_commit": null,
+      "homepage": "http://www.linux-pam.org/"
+    },
+    {
+      "name": "libpam0g",
+      "version": "1.7.0-5",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/p/pam/libpam0g_1.7.0-5_amd64.deb",
+      "sha256": "4f5bde27d8df2de6ea8990319b42d9974f56a3ba9907ce7296fd0f8964fc9fb1",
+      "bytes": 69880,
+      "installed_bytes": 198656,
+      "dependencies": [
+        "libaudit1 (>= 1:2.2.1)",
+        "libc6 (>= 2.34)",
+        "debconf (>= 0.5) | debconf-2.0"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libpam0g/copyright",
+      "origin": "pam",
+      "source_commit": null,
+      "homepage": "http://www.linux-pam.org/"
+    },
+    {
+      "name": "libpcre2-8-0",
+      "version": "10.46-1~deb13u3",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/p/pcre2/libpcre2-8-0_10.46-1~deb13u3_amd64.deb",
+      "sha256": "e226f661d918f04daf38cdbc4806b7ed7d6ef95c7eb0ade692fc350e31970040",
+      "bytes": 299148,
+      "installed_bytes": 792576,
+      "dependencies": [
+        "libc6 (>= 2.34)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libpcre2-8-0/copyright",
+      "origin": "pcre2",
+      "source_commit": null,
+      "homepage": "https://github.com/PCRE2Project/pcre2"
+    },
+    {
+      "name": "libproc2-0",
+      "version": "2:4.0.4-9",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/p/procps/libproc2-0_4.0.4-9_amd64.deb",
+      "sha256": "c9d61caab1b2ddfc3f17edb95be31b9809fcb2daf27d853dff615bc4ebd08b4b",
+      "bytes": 65596,
+      "installed_bytes": 242688,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libsystemd0"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libproc2-0/copyright",
+      "origin": "procps",
+      "source_commit": null,
+      "homepage": "https://gitlab.com/procps-ng/procps"
+    },
+    {
+      "name": "libpython3-stdlib",
+      "version": "3.13.5-1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/p/python3-defaults/libpython3-stdlib_3.13.5-1_amd64.deb",
+      "sha256": "7e142ed64a81ccdd39714f213467bd365736ef341adb2be11be981f638b9175f",
+      "bytes": 10180,
+      "installed_bytes": 28672,
+      "dependencies": [
+        "libpython3.13-stdlib (>= 3.13.5-1~)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libpython3-stdlib/copyright",
+      "origin": "python3-defaults",
+      "source_commit": null,
+      "homepage": "https://www.python.org/"
+    },
+    {
+      "name": "libpython3.13-minimal",
+      "version": "3.13.5-2+deb13u5",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/p/python3.13/libpython3.13-minimal_3.13.5-2+deb13u5_amd64.deb",
+      "sha256": "a4aa6a9a8c77f87bfe545e1d14ec42c001d189ace90e3aa75deec882b39dee49",
+      "bytes": 863168,
+      "installed_bytes": 5582848,
+      "dependencies": [
+        "libc6 (>= 2.14)",
+        "libssl3t64 (>= 3.4.0)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libpython3.13-minimal/copyright",
+      "origin": "python3.13",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "libpython3.13-stdlib",
+      "version": "3.13.5-2+deb13u5",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/p/python3.13/libpython3.13-stdlib_3.13.5-2+deb13u5_amd64.deb",
+      "sha256": "db161322a3481d2c0c3b9a3b9a03c3ab0e2b1718f54b88755fb4a3f939165b84",
+      "bytes": 1958624,
+      "installed_bytes": 9111552,
+      "dependencies": [
+        "libpython3.13-minimal (= 3.13.5-2+deb13u5)",
+        "media-types | mime-support",
+        "netbase",
+        "tzdata",
+        "libbz2-1.0",
+        "libc6 (>= 2.38)",
+        "libdb5.3t64",
+        "libffi8 (>= 3.4)",
+        "liblzma5 (>= 5.1.1alpha+20120614)",
+        "libncursesw6 (>= 6.1)",
+        "libreadline8t64 (>= 7.0~beta)",
+        "libsqlite3-0 (>= 3.36.0)",
+        "libtinfo6 (>= 6)",
+        "libuuid1 (>= 2.20.1)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libpython3.13-stdlib/copyright",
+      "origin": "python3.13",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "libreadline8t64",
+      "version": "8.2-6",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/r/readline/libreadline8t64_8.2-6_amd64.deb",
+      "sha256": "eeadf2b5e755c9f183883feea2d9b5b28560284275d5f54d3e55d0923b1d0967",
+      "bytes": 168832,
+      "installed_bytes": 496640,
+      "dependencies": [
+        "readline-common",
+        "libc6 (>= 2.38)",
+        "libtinfo6 (>= 6)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libreadline8t64/copyright",
+      "origin": "readline",
+      "source_commit": null,
+      "homepage": "https://tiswww.case.edu/php/chet/readline/rltop.html"
+    },
+    {
+      "name": "libseccomp2",
+      "version": "2.6.0-2",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp2_2.6.0-2_amd64.deb",
+      "sha256": "89d5138e05fb6a86b9afd8b54dc0fb4b14f4c27c05e6c5f767c2132bdf808531",
+      "bytes": 51712,
+      "installed_bytes": 205824,
+      "dependencies": [
+        "libc6 (>= 2.14)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libseccomp2/copyright",
+      "origin": "libseccomp",
+      "source_commit": null,
+      "homepage": "https://github.com/seccomp/libseccomp"
+    },
+    {
+      "name": "libselinux1",
+      "version": "3.8.1-1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libs/libselinux/libselinux1_3.8.1-1_amd64.deb",
+      "sha256": "68bb8d32bd8d6d7d2f5952a169db03d1484b46ae1e52abccdec42a19dccea5d5",
+      "bytes": 84680,
+      "installed_bytes": 234496,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libpcre2-8-0 (>= 10.22)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libselinux1/copyright",
+      "origin": "libselinux",
+      "source_commit": null,
+      "homepage": "https://github.com/SELinuxProject"
+    },
+    {
+      "name": "libsemanage-common",
+      "version": "3.8.1-1",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage-common_3.8.1-1_all.deb",
+      "sha256": "65375d886749c236bd1da4d9990b7c2469d2fe66019a28e5614f6814376d3dcb",
+      "bytes": 7812,
+      "installed_bytes": 21504,
+      "dependencies": [],
+      "license": "Debian-package-copyright:/usr/share/doc/libsemanage-common/copyright",
+      "origin": "libsemanage",
+      "source_commit": null,
+      "homepage": "https://selinuxproject.org"
+    },
+    {
+      "name": "libsemanage2",
+      "version": "3.8.1-1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage2_3.8.1-1_amd64.deb",
+      "sha256": "f97da7505d17ad3bdd8fc56302256df7e158e5e0d8b02cb766654199cbc406a9",
+      "bytes": 95284,
+      "installed_bytes": 320512,
+      "dependencies": [
+        "libsemanage-common (>= 3.8.1-1)",
+        "libaudit1 (>= 1:2.2.1)",
+        "libbz2-1.0",
+        "libc6 (>= 2.38)",
+        "libselinux1 (>= 3.8.1)",
+        "libsepol2 (>= 3.8.1)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libsemanage2/copyright",
+      "origin": "libsemanage",
+      "source_commit": null,
+      "homepage": "https://selinuxproject.org"
+    },
+    {
+      "name": "libsepol2",
+      "version": "3.8.1-1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libs/libsepol/libsepol2_3.8.1-1_amd64.deb",
+      "sha256": "3595d2d3a6d24695e7953f4f00cdfe6974c9242d9a8dfee8998e77fbf7b2ba09",
+      "bytes": 295588,
+      "installed_bytes": 855040,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libsepol2/copyright",
+      "origin": "libsepol",
+      "source_commit": null,
+      "homepage": "https://selinuxproject.org"
+    },
+    {
+      "name": "libsmartcols1",
+      "version": "2.41.5-0+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/u/util-linux/libsmartcols1_2.41.5-0+deb13u1_amd64.deb",
+      "sha256": "d96bac9c8805685f2734885098a214b82950da6ebb182c27a6b7a124a0323392",
+      "bytes": 143216,
+      "installed_bytes": 386048,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libsmartcols1/copyright",
+      "origin": "util-linux",
+      "source_commit": null,
+      "homepage": "https://github.com/util-linux/util-linux"
+    },
+    {
+      "name": "libsqlite3-0",
+      "version": "3.46.1-7+deb13u2",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/s/sqlite3/libsqlite3-0_3.46.1-7+deb13u2_amd64.deb",
+      "sha256": "0a459adaffd901109f7811ab65f58e7a957b4907d05539cf3d1184efdcde0468",
+      "bytes": 914584,
+      "installed_bytes": 1878016,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libsqlite3-0/copyright",
+      "origin": "sqlite3",
+      "source_commit": null,
+      "homepage": "https://www.sqlite.org/"
+    },
+    {
+      "name": "libss2",
+      "version": "1.47.2-3+b12",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/e/e2fsprogs/libss2_1.47.2-3+b12_amd64.deb",
+      "sha256": "c5d38d71984c1bf774c1254238636e605fc4e0dc24d853f709921eb740327f4a",
+      "bytes": 29724,
+      "installed_bytes": 81920,
+      "dependencies": [
+        "libcom-err2",
+        "libc6 (>= 2.34)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libss2/copyright",
+      "origin": "e2fsprogs (1.47.2-3)",
+      "source_commit": null,
+      "homepage": "http://e2fsprogs.sourceforge.net"
+    },
+    {
+      "name": "libssl3t64",
+      "version": "3.5.7-1~deb13u3",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/o/openssl/libssl3t64_3.5.7-1~deb13u3_amd64.deb",
+      "sha256": "ff16bc048bcd7d1b256094450b79c77947d8e76fe2a24bd99b91021d591fa074",
+      "bytes": 2458176,
+      "installed_bytes": 8309760,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libzstd1 (>= 1.5.5)",
+        "zlib1g (>= 1:1.1.4)",
+        "openssl-provider-legacy"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libssl3t64/copyright",
+      "origin": "openssl",
+      "source_commit": null,
+      "homepage": "https://openssl-library.org"
+    },
+    {
+      "name": "libsystemd-shared",
+      "version": "257.13-1~deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/s/systemd/libsystemd-shared_257.13-1~deb13u1_amd64.deb",
+      "sha256": "2d349824e57f88507e2a33360610d8afc143a4ad5e80ee4bf8f37b826d6f37f9",
+      "bytes": 2154616,
+      "installed_bytes": 6988800,
+      "dependencies": [
+        "libacl1 (>= 2.2.23)",
+        "libaudit1 (>= 1:2.2.1)",
+        "libblkid1 (>= 2.30.2)",
+        "libc6 (>= 2.39)",
+        "libcap2 (>= 1:2.10)",
+        "libcrypt1 (>= 1:4.4.0)",
+        "libmount1 (>= 2.30)",
+        "libpam0g (>= 0.99.7.1)",
+        "libseccomp2 (>= 2.4.1)",
+        "libselinux1 (>= 3.1~)",
+        "libssl3t64 (>= 3.4.0)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libsystemd-shared/copyright",
+      "origin": "systemd",
+      "source_commit": null,
+      "homepage": "https://systemd.io"
+    },
+    {
+      "name": "libsystemd0",
+      "version": "257.13-1~deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/s/systemd/libsystemd0_257.13-1~deb13u1_amd64.deb",
+      "sha256": "ab0d4127b5e46e6f8c015a1db15a62ba9ae274cdefa150083adf90ada0600ea1",
+      "bytes": 454648,
+      "installed_bytes": 1252352,
+      "dependencies": [
+        "libc6 (>= 2.39)",
+        "libcap2 (>= 1:2.10)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libsystemd0/copyright",
+      "origin": "systemd",
+      "source_commit": null,
+      "homepage": "https://systemd.io"
+    },
+    {
+      "name": "libtext-charwidth-perl",
+      "version": "0.04-11+b4",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libt/libtext-charwidth-perl/libtext-charwidth-perl_0.04-11+b4_amd64.deb",
+      "sha256": "3a1d44df306e0252e8a16df07eba457bc9f2ef736ee890a1c35ffdfd548eafa0",
+      "bytes": 9476,
+      "installed_bytes": 43008,
+      "dependencies": [
+        "libc6 (>= 2.4)",
+        "perl-base (>= 5.40.0-6)",
+        "perlapi-5.40.0"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libtext-charwidth-perl/copyright",
+      "origin": "libtext-charwidth-perl (0.04-11)",
+      "source_commit": null,
+      "homepage": "https://metacpan.org/release/Text-CharWidth"
+    },
+    {
+      "name": "libtext-wrapi18n-perl",
+      "version": "0.06-10",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libt/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06-10_all.deb",
+      "sha256": "17f98c7c09af8ac3bdbfd5a5dad32f3f51c71b02cdfc411366f49092a395de85",
+      "bytes": 8808,
+      "installed_bytes": 26624,
+      "dependencies": [
+        "libtext-charwidth-perl"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libtext-wrapi18n-perl/copyright",
+      "origin": "libtext-wrapi18n-perl",
+      "source_commit": null,
+      "homepage": "https://metacpan.org/release/Text-WrapI18N"
+    },
+    {
+      "name": "libtinfo6",
+      "version": "6.5+20250216-2",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/n/ncurses/libtinfo6_6.5+20250216-2_amd64.deb",
+      "sha256": "8b9f6a7983e9418564e48a627518de4c03917b56efe68d7f3e93bd8fffa1cc10",
+      "bytes": 348380,
+      "installed_bytes": 582656,
+      "dependencies": [
+        "libc6 (>= 2.34)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libtinfo6/copyright",
+      "origin": "ncurses",
+      "source_commit": null,
+      "homepage": "https://invisible-island.net/ncurses/"
+    },
+    {
+      "name": "libtirpc-common",
+      "version": "1.3.6+ds-1",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libt/libtirpc/libtirpc-common_1.3.6+ds-1_all.deb",
+      "sha256": "300f582e2c9151a8d329568c705cadc76252c417147312fe331c4560d2c7a6c3",
+      "bytes": 11004,
+      "installed_bytes": 32768,
+      "dependencies": [],
+      "license": "Debian-package-copyright:/usr/share/doc/libtirpc-common/copyright",
+      "origin": "libtirpc",
+      "source_commit": null,
+      "homepage": "http://sourceforge.net/projects/libtirpc"
+    },
+    {
+      "name": "libtirpc3t64",
+      "version": "1.3.6+ds-1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libt/libtirpc/libtirpc3t64_1.3.6+ds-1_amd64.deb",
+      "sha256": "ef4536c09bf5063554310e22d586ae90990100ba66d2fe7c35660e9e658913b6",
+      "bytes": 83300,
+      "installed_bytes": 241664,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libgssapi-krb5-2 (>= 1.17)",
+        "libtirpc-common (>= 1.3.6+ds-1)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libtirpc3t64/copyright",
+      "origin": "libtirpc",
+      "source_commit": null,
+      "homepage": "http://sourceforge.net/projects/libtirpc"
+    },
+    {
+      "name": "libudev1",
+      "version": "257.13-1~deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/s/systemd/libudev1_257.13-1~deb13u1_amd64.deb",
+      "sha256": "5d41c284f5a93b05bc7d648b61a02dd2bb9ff05b2261ad1a8b7d96044a0cfa88",
+      "bytes": 152300,
+      "installed_bytes": 365568,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libcap2 (>= 1:2.10)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libudev1/copyright",
+      "origin": "systemd",
+      "source_commit": null,
+      "homepage": "https://systemd.io"
+    },
+    {
+      "name": "libuuid1",
+      "version": "2.41.5-0+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/u/util-linux/libuuid1_2.41.5-0+deb13u1_amd64.deb",
+      "sha256": "c1bf4c4c3ff48c57fabf93307dfb56996b60cfa33927afc4158b5db36fb2721e",
+      "bytes": 37848,
+      "installed_bytes": 100352,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libuuid1/copyright",
+      "origin": "util-linux",
+      "source_commit": null,
+      "homepage": "https://github.com/util-linux/util-linux"
+    },
+    {
+      "name": "libwrap0",
+      "version": "7.6.q-36",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/t/tcp-wrappers/libwrap0_7.6.q-36_amd64.deb",
+      "sha256": "cde12afa15d6b1556c5e0564d22edf3b99e6b8fa94c59ccd8b8eebbb62dc19ec",
+      "bytes": 55256,
+      "installed_bytes": 112640,
+      "dependencies": [
+        "libc6 (>= 2.33)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libwrap0/copyright",
+      "origin": "tcp-wrappers",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "libwtmpdb0",
+      "version": "0.73.0-3+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/w/wtmpdb/libwtmpdb0_0.73.0-3+deb13u1_amd64.deb",
+      "sha256": "8d6bc1c961d734da58b2d4c35b0a3cd6ad2fe81655bd982c655a97c2255b1c9b",
+      "bytes": 13056,
+      "installed_bytes": 51200,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libsqlite3-0 (>= 3.5.9)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libwtmpdb0/copyright",
+      "origin": "wtmpdb",
+      "source_commit": null,
+      "homepage": "https://github.com/thkukuk/wtmpdb/"
+    },
+    {
+      "name": "libxtables12",
+      "version": "1.8.11-2",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/i/iptables/libxtables12_1.8.11-2_amd64.deb",
+      "sha256": "4de5aa59faef5e98d6ba9f5f521a915be5641f224f597862f8d29e8319e8db16",
+      "bytes": 31896,
+      "installed_bytes": 103424,
+      "dependencies": [
+        "libc6 (>= 2.34)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libxtables12/copyright",
+      "origin": "iptables",
+      "source_commit": null,
+      "homepage": "https://www.netfilter.org/"
+    },
+    {
+      "name": "libzstd1",
+      "version": "1.5.7+dfsg-1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/libz/libzstd/libzstd1_1.5.7+dfsg-1_amd64.deb",
+      "sha256": "2f6a2aeacfc925eba8b00ac9139bc4bfccf8cacb09eb93de067074b26948eef9",
+      "bytes": 303836,
+      "installed_bytes": 867328,
+      "dependencies": [
+        "libc6 (>= 2.34)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/libzstd1/copyright",
+      "origin": "libzstd",
+      "source_commit": null,
+      "homepage": "https://github.com/facebook/zstd"
+    },
+    {
+      "name": "login.defs",
+      "version": "1:4.17.4-2",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/s/shadow/login.defs_4.17.4-2_all.deb",
+      "sha256": "b4bbb8242cbf5588de7aafeb9d578a3dee1db2891f444ab454fd30bd80ccf2b4",
+      "bytes": 186124,
+      "installed_bytes": 219136,
+      "dependencies": [],
+      "license": "Debian-package-copyright:/usr/share/doc/login.defs/copyright",
+      "origin": "shadow",
+      "source_commit": null,
+      "homepage": "https://github.com/shadow-maint/shadow"
+    },
+    {
+      "name": "logsave",
+      "version": "1.47.2-3+b12",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/e/e2fsprogs/logsave_1.47.2-3+b12_amd64.deb",
+      "sha256": "aa028720743b79bd054749af34c501c093f0ab5e044e4dc44273765be5e95de5",
+      "bytes": 24864,
+      "installed_bytes": 60416,
+      "dependencies": [
+        "libc6 (>= 2.34)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/logsave/copyright",
+      "origin": "e2fsprogs (1.47.2-3)",
+      "source_commit": null,
+      "homepage": "http://e2fsprogs.sourceforge.net"
+    },
+    {
+      "name": "media-types",
+      "version": "13.0.0",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/m/media-types/media-types_13.0.0_all.deb",
+      "sha256": "0788e4b0b72db1bcf74a19cb24c3511e7770ad0b341f0f30e361701c3072f53e",
+      "bytes": 29336,
+      "installed_bytes": 100352,
+      "dependencies": [],
+      "license": "Debian-package-copyright:/usr/share/doc/media-types/copyright",
+      "origin": "media-types",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "mount",
+      "version": "2.41.5-0+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/u/util-linux/mount_2.41.5-0+deb13u1_amd64.deb",
+      "sha256": "eb70a615114ac40123768beb20e302554d5cb7edb33290be7e418ebe1075c878",
+      "bytes": 163208,
+      "installed_bytes": 508928,
+      "dependencies": [
+        "libblkid1 (= 2.41.5-0+deb13u1)",
+        "libc6 (>= 2.38)",
+        "libmount1 (= 2.41.5-0+deb13u1)",
+        "libselinux1 (>= 3.1~)",
+        "libsmartcols1 (= 2.41.5-0+deb13u1)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/mount/copyright",
+      "origin": "util-linux",
+      "source_commit": null,
+      "homepage": "https://github.com/util-linux/util-linux"
+    },
+    {
+      "name": "ncurses-base",
+      "version": "6.5+20250216-2",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/n/ncurses/ncurses-base_6.5+20250216-2_all.deb",
+      "sha256": "190e775260a38973c415a36ae99f33ad1b37ea6ca99929d7c5d53843fc23e914",
+      "bytes": 273216,
+      "installed_bytes": 398336,
+      "dependencies": [],
+      "license": "Debian-package-copyright:/usr/share/doc/ncurses-base/copyright",
+      "origin": "ncurses",
+      "source_commit": null,
+      "homepage": "https://invisible-island.net/ncurses/"
+    },
+    {
+      "name": "ncurses-bin",
+      "version": "6.5+20250216-2",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/n/ncurses/ncurses-bin_6.5+20250216-2_amd64.deb",
+      "sha256": "40a525f4761e9ed4b8adcd1783cb9a6467ff8008215ae99b3597825bdefc61e4",
+      "bytes": 438372,
+      "installed_bytes": 680960,
+      "dependencies": [
+        "libc6 (>= 2.34)",
+        "libtinfo6 (>= 6.4+20230603)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/ncurses-bin/copyright",
+      "origin": "ncurses",
+      "source_commit": null,
+      "homepage": "https://invisible-island.net/ncurses/"
+    },
+    {
+      "name": "netbase",
+      "version": "6.5",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/n/netbase/netbase_6.5_all.deb",
+      "sha256": "76bafa92947ebd37b0a6f9ec6570412041f56edebc1c66d323731216d318471e",
+      "bytes": 12436,
+      "installed_bytes": 35840,
+      "dependencies": [],
+      "license": "Debian-package-copyright:/usr/share/doc/netbase/copyright",
+      "origin": "netbase",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "openssh-client",
+      "version": "1:10.0p1-7+deb13u4",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/o/openssh/openssh-client_10.0p1-7+deb13u4_amd64.deb",
+      "sha256": "8fff343654f86c3b3266f94cd338c7b4da2e386da029327815118ea00bce03b9",
+      "bytes": 989904,
+      "installed_bytes": 5131264,
+      "dependencies": [
+        "adduser",
+        "init-system-helpers (>= 1.66~)",
+        "passwd",
+        "libc6 (>= 2.38)",
+        "libedit2 (>= 2.11-20080614-0)",
+        "libfido2-1 (>= 1.8.0)",
+        "libgssapi-krb5-2 (>= 1.17)",
+        "libselinux1 (>= 3.1~)",
+        "libssl3t64 (>= 3.0.0)",
+        "zlib1g (>= 1:1.1.4)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/openssh-client/copyright",
+      "origin": "openssh",
+      "source_commit": null,
+      "homepage": "https://www.openssh.com/"
+    },
+    {
+      "name": "openssh-server",
+      "version": "1:10.0p1-7+deb13u4",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/o/openssh/openssh-server_10.0p1-7+deb13u4_amd64.deb",
+      "sha256": "b4a02524fd2be375624d917ee8102a16567e9e8dd786b41c35e22360cdd37f9d",
+      "bytes": 602372,
+      "installed_bytes": 3511296,
+      "dependencies": [
+        "init-system-helpers (>= 1.54~)",
+        "libpam-modules",
+        "libpam-runtime",
+        "lsb-base",
+        "openssh-client (= 1:10.0p1-7+deb13u4)",
+        "openssh-sftp-server",
+        "procps",
+        "ucf",
+        "debconf (>= 0.5) | debconf-2.0",
+        "runit-helper (>= 2.14.0~)",
+        "systemd | systemd-standalone-sysusers | systemd-sysusers",
+        "libaudit1 (>= 1:2.2.1)",
+        "libc6 (>= 2.38)",
+        "libcom-err2 (>= 1.43.9)",
+        "libcrypt1 (>= 1:4.1.0)",
+        "libgssapi-krb5-2 (>= 1.17)",
+        "libkrb5-3 (>= 1.13~alpha1+dfsg)",
+        "libpam0g (>= 0.99.7.1)",
+        "libselinux1 (>= 3.1~)",
+        "libssl3t64 (>= 3.0.0)",
+        "libwrap0 (>= 7.6-4~)",
+        "libwtmpdb0 (>= 0.13.0)",
+        "zlib1g (>= 1:1.1.4)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/openssh-server/copyright",
+      "origin": "openssh",
+      "source_commit": null,
+      "homepage": "https://www.openssh.com/"
+    },
+    {
+      "name": "openssh-sftp-server",
+      "version": "1:10.0p1-7+deb13u4",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/o/openssh/openssh-sftp-server_10.0p1-7+deb13u4_amd64.deb",
+      "sha256": "28a82485438fafc8d6a7552ab61cac827338c16f39e3790d6ebcc146d452e542",
+      "bytes": 65348,
+      "installed_bytes": 177152,
+      "dependencies": [
+        "openssh-client (= 1:10.0p1-7+deb13u4)",
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/openssh-sftp-server/copyright",
+      "origin": "openssh",
+      "source_commit": null,
+      "homepage": "https://www.openssh.com/"
+    },
+    {
+      "name": "openssl",
+      "version": "3.5.7-1~deb13u3",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7-1~deb13u3_amd64.deb",
+      "sha256": "43a9cbcf2a8a0e1f0a1c3f5a33ee1f56b269690e7a2129f2b2d0582e789589d7",
+      "bytes": 1508068,
+      "installed_bytes": 2570240,
+      "dependencies": [
+        "libc6 (>= 2.34)",
+        "libssl3t64 (>= 3.5.0)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/openssl/copyright",
+      "origin": "openssl",
+      "source_commit": null,
+      "homepage": "https://openssl-library.org"
+    },
+    {
+      "name": "openssl-provider-legacy",
+      "version": "3.5.7-1~deb13u3",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl-provider-legacy_3.5.7-1~deb13u3_amd64.deb",
+      "sha256": "c12e0266c4780749a4702b8959ac979689f4182e18eed85a8a5eb90ed0e16eab",
+      "bytes": 316452,
+      "installed_bytes": 434176,
+      "dependencies": [
+        "libc6 (>= 2.14)",
+        "libssl3t64 (>= 3.0.3)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/openssl-provider-legacy/copyright",
+      "origin": "openssl",
+      "source_commit": null,
+      "homepage": "https://openssl-library.org"
+    },
+    {
+      "name": "original-awk",
+      "version": "2025-01-16-1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/o/original-awk/original-awk_2025-01-16-1_amd64.deb",
+      "sha256": "220e09441ee61bd73cf34502de7505f924b4dc459f4b11ba3c1af8734a5e9254",
+      "bytes": 76240,
+      "installed_bytes": 188416,
+      "dependencies": [
+        "libc6 (>= 2.34)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/original-awk/copyright",
+      "origin": "original-awk",
+      "source_commit": null,
+      "homepage": "https://github.com/onetrueawk/awk"
+    },
+    {
+      "name": "passwd",
+      "version": "1:4.17.4-2",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/s/shadow/passwd_4.17.4-2_amd64.deb",
+      "sha256": "c5eaef41c6947d2888fa3462f787a7e02158b997bd0119154283f425ba57b8b8",
+      "bytes": 1228860,
+      "installed_bytes": 4872192,
+      "dependencies": [
+        "base-passwd (>= 3.6.4)",
+        "libpam-modules",
+        "login.defs",
+        "libacl1 (>= 2.2.23)",
+        "libattr1 (>= 1:2.4.44)",
+        "libaudit1 (>= 1:2.2.1)",
+        "libbsd0 (>= 0.11.0)",
+        "libc6 (>= 2.38)",
+        "libcrypt1 (>= 1:4.1.0)",
+        "libpam0g (>= 0.99.7.1)",
+        "libselinux1 (>= 3.1~)",
+        "libsemanage2 (>= 2.0.32)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/passwd/copyright",
+      "origin": "shadow",
+      "source_commit": null,
+      "homepage": "https://github.com/shadow-maint/shadow"
+    },
+    {
+      "name": "perl-base",
+      "version": "5.40.1-6+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/p/perl/perl-base_5.40.1-6+deb13u1_amd64.deb",
+      "sha256": "b795464137a0f4d443fc9284f4b93e883fb83883cb533adf300ac660807a352a",
+      "bytes": 1666320,
+      "installed_bytes": 8002560,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libcrypt1 (>= 1:4.1.0)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/perl-base/copyright",
+      "origin": "perl",
+      "source_commit": null,
+      "homepage": "https://dev.perl.org/perl5/"
+    },
+    {
+      "name": "procps",
+      "version": "2:4.0.4-9",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-9_amd64.deb",
+      "sha256": "4db90bb6776772fc52585d6b1fbfc52ec2a85480e1b4363b743fbb2ffa2a5375",
+      "bytes": 882088,
+      "installed_bytes": 2452480,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libncursesw6 (>= 6)",
+        "libproc2-0 (>= 2:4.0.4)",
+        "libsystemd0 (>= 254)",
+        "libtinfo6 (>= 6)",
+        "init-system-helpers (>= 1.29~)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/procps/copyright",
+      "origin": "procps",
+      "source_commit": null,
+      "homepage": "https://gitlab.com/procps-ng/procps"
+    },
+    {
+      "name": "python3",
+      "version": "3.13.5-1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/p/python3-defaults/python3_3.13.5-1_amd64.deb",
+      "sha256": "c1388174dc7140e6c19a6dd39f8a0dcb38a835cd66c65644e0dded43d5223cb0",
+      "bytes": 28244,
+      "installed_bytes": 84992,
+      "dependencies": [
+        "python3-minimal (= 3.13.5-1)",
+        "python3.13 (>= 3.13.5-1~)",
+        "libpython3-stdlib (= 3.13.5-1)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/python3/copyright",
+      "origin": "python3-defaults",
+      "source_commit": null,
+      "homepage": "https://www.python.org/"
+    },
+    {
+      "name": "python3-minimal",
+      "version": "3.13.5-1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/p/python3-defaults/python3-minimal_3.13.5-1_amd64.deb",
+      "sha256": "a5d2371bebf3689f676e3f3bae800371bcc4392a8a51269e23d528249b399615",
+      "bytes": 27248,
+      "installed_bytes": 114688,
+      "dependencies": [
+        "python3.13-minimal (>= 3.13.5-1~)",
+        "dpkg (>= 1.13.20)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/python3-minimal/copyright",
+      "origin": "python3-defaults",
+      "source_commit": null,
+      "homepage": "https://www.python.org/"
+    },
+    {
+      "name": "python3.13",
+      "version": "3.13.5-2+deb13u5",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5-2+deb13u5_amd64.deb",
+      "sha256": "460c1fd72845516ac3ce9d1686916f3ab2e4c86f8a9746e14d26243a47e2b98d",
+      "bytes": 757492,
+      "installed_bytes": 849920,
+      "dependencies": [
+        "python3.13-minimal (= 3.13.5-2+deb13u5)",
+        "libpython3.13-stdlib (= 3.13.5-2+deb13u5)",
+        "media-types | mime-support",
+        "tzdata"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/python3.13/copyright",
+      "origin": "python3.13",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "python3.13-minimal",
+      "version": "3.13.5-2+deb13u5",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/p/python3.13/python3.13-minimal_3.13.5-2+deb13u5_amd64.deb",
+      "sha256": "c1fda9e7b1bf15b2fa75a238d8a8710e142fe14c722fc650c5fc614f078c9073",
+      "bytes": 2224552,
+      "installed_bytes": 6930432,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libpython3.13-minimal (= 3.13.5-2+deb13u5)",
+        "libexpat1 (>= 2.6.0)",
+        "zlib1g (>= 1:1.2.0)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/python3.13-minimal/copyright",
+      "origin": "python3.13",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "readline-common",
+      "version": "8.2-6",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/r/readline/readline-common_8.2-6_all.deb",
+      "sha256": "f77e8aa0bf0de618f11cb0b21658a4ed60f177d63b3cf26d7fc3706b6d0eaaa9",
+      "bytes": 69360,
+      "installed_bytes": 91136,
+      "dependencies": [],
+      "license": "Debian-package-copyright:/usr/share/doc/readline-common/copyright",
+      "origin": "readline",
+      "source_commit": null,
+      "homepage": "https://tiswww.case.edu/php/chet/readline/rltop.html"
+    },
+    {
+      "name": "runit-helper",
+      "version": "2.16.4",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/d/dh-runit/runit-helper_2.16.4_all.deb",
+      "sha256": "8a5866d3036a1645a1cff2bfe7dcf5b62e8d2c30ec31a115d4ccd2486645a54e",
+      "bytes": 7296,
+      "installed_bytes": 21504,
+      "dependencies": [],
+      "license": "Debian-package-copyright:/usr/share/doc/runit-helper/copyright",
+      "origin": "dh-runit",
+      "source_commit": null,
+      "homepage": "https://salsa.debian.org/debian/dh-runit"
+    },
+    {
+      "name": "sed",
+      "version": "4.9-2+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/s/sed/sed_4.9-2+deb13u1_amd64.deb",
+      "sha256": "7071270ed4f6adda55bc4f926347fb847bacaffbdee3dff917bc6006ed7e3775",
+      "bytes": 330696,
+      "installed_bytes": 1014784,
+      "dependencies": [
+        "libacl1 (>= 2.2.23)",
+        "libc6 (>= 2.38)",
+        "libselinux1 (>= 3.1~)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/sed/copyright",
+      "origin": "sed",
+      "source_commit": null,
+      "homepage": "https://www.gnu.org/software/sed/"
+    },
+    {
+      "name": "sensible-utils",
+      "version": "0.0.25",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.25_all.deb",
+      "sha256": "873a9b73c3478cc3148cdbf5cc2084949a0a8e4fa16131d1cbc895d2f1f3470e",
+      "bytes": 24992,
+      "installed_bytes": 64512,
+      "dependencies": [],
+      "license": "Debian-package-copyright:/usr/share/doc/sensible-utils/copyright",
+      "origin": "sensible-utils",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "systemd",
+      "version": "257.13-1~deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/s/systemd/systemd_257.13-1~deb13u1_amd64.deb",
+      "sha256": "ee81302a1d5b7434762b6e784a572854d4b6cf6235e33e2d104ad4e1cae71ab4",
+      "bytes": 3093632,
+      "installed_bytes": 10182656,
+      "dependencies": [
+        "libc6 (>= 2.38)",
+        "libsystemd-shared (= 257.13-1~deb13u1)",
+        "libacl1 (>= 2.2.23)",
+        "libapparmor1 (>= 2.13)",
+        "libc6 (>= 2.41)",
+        "libmount1 (>= 2.30)",
+        "libpam0g (>= 0.99.7.1)",
+        "libseccomp2 (>= 2.3.1)",
+        "libselinux1 (>= 3.1~)",
+        "libssl3t64 (>= 3.4.0)",
+        "libsystemd0 (= 257.13-1~deb13u1)",
+        "mount"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/systemd/copyright",
+      "origin": "systemd",
+      "source_commit": null,
+      "homepage": "https://systemd.io"
+    },
+    {
+      "name": "sysvinit-utils",
+      "version": "3.14-4",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit-utils_3.14-4_amd64.deb",
+      "sha256": "c7e957360dff89675b491e501b00047cf750695178cabab167c92fc260d358ec",
+      "bytes": 34060,
+      "installed_bytes": 106496,
+      "dependencies": [
+        "libc6 (>= 2.38)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/sysvinit-utils/copyright",
+      "origin": "sysvinit",
+      "source_commit": null,
+      "homepage": "https://github.com/slicer69/sysvinit"
+    },
+    {
+      "name": "tar",
+      "version": "1.35+dfsg-3.1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/t/tar/tar_1.35+dfsg-3.1_amd64.deb",
+      "sha256": "214c02e1aa291076a3147b8a4c4cae02fadf4c67df629186e3e313726faef1de",
+      "bytes": 814968,
+      "installed_bytes": 3159040,
+      "dependencies": [
+        "libacl1 (>= 2.2.23)",
+        "libc6 (>= 2.38)",
+        "libselinux1 (>= 3.1~)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/tar/copyright",
+      "origin": "tar",
+      "source_commit": null,
+      "homepage": "https://www.gnu.org/software/tar/"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026c-0+deb13u1",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c-0+deb13u1_all.deb",
+      "sha256": "813b9bbbe14ccda2b24617b8bade0ade4d745957e75921766c153d249886bd4c",
+      "bytes": 264156,
+      "installed_bytes": 1390592,
+      "dependencies": [
+        "debconf (>= 0.5) | debconf-2.0"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/tzdata/copyright",
+      "origin": "tzdata",
+      "source_commit": null,
+      "homepage": "https://www.iana.org/time-zones"
+    },
+    {
+      "name": "ucf",
+      "version": "3.0052",
+      "architecture": "all",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0052_all.deb",
+      "sha256": "ab5a6d5a621ad07034ce29d0c2587e6e267ecd2975458b2c8a7d0ada77dcb95b",
+      "bytes": 43296,
+      "installed_bytes": 151552,
+      "dependencies": [
+        "debconf (>= 0.5) | debconf-2.0",
+        "libtext-wrapi18n-perl",
+        "procps",
+        "sensible-utils"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/ucf/copyright",
+      "origin": "ucf",
+      "source_commit": null,
+      "homepage": null
+    },
+    {
+      "name": "util-linux",
+      "version": "2.41.5-0+deb13u1",
+      "architecture": "amd64",
+      "repository": "trixie-security",
+      "url": "https://security.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5-0+deb13u1_amd64.deb",
+      "sha256": "7d5b1176cc3d8cc6b290b3ec17af458f362d9200845f30da22057a8198744430",
+      "bytes": 1242392,
+      "installed_bytes": 5105664,
+      "dependencies": [
+        "libpam-modules",
+        "libpam-runtime",
+        "libblkid1 (= 2.41.5-0+deb13u1)",
+        "libc6 (>= 2.41)",
+        "libcap-ng0 (>= 0.7.9)",
+        "libcrypt1 (>= 1:4.1.0)",
+        "liblastlog2-2 (= 2.41.5-0+deb13u1)",
+        "libmount1 (= 2.41.5-0+deb13u1)",
+        "libpam0g (>= 0.99.7.1)",
+        "libselinux1 (>= 3.1~)",
+        "libsmartcols1 (= 2.41.5-0+deb13u1)",
+        "libsystemd0",
+        "libtinfo6 (>= 6)",
+        "libudev1 (>= 183)",
+        "libuuid1 (= 2.41.5-0+deb13u1)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/util-linux/copyright",
+      "origin": "util-linux",
+      "source_commit": null,
+      "homepage": "https://github.com/util-linux/util-linux"
+    },
+    {
+      "name": "zlib1g",
+      "version": "1:1.3.dfsg+really1.3.1-1+b1",
+      "architecture": "amd64",
+      "repository": "trixie",
+      "url": "https://deb.debian.org/debian/pool/main/z/zlib/zlib1g_1.3.dfsg+really1.3.1-1+b1_amd64.deb",
+      "sha256": "015be740d6236ad114582dea500c1d907f29e16d6db00566ca32fb68d71ac90d",
+      "bytes": 88892,
+      "installed_bytes": 177152,
+      "dependencies": [
+        "libc6 (>= 2.14)"
+      ],
+      "license": "Debian-package-copyright:/usr/share/doc/zlib1g/copyright",
+      "origin": "zlib (1:1.3.dfsg+really1.3.1-1)",
+      "source_commit": null,
+      "homepage": "http://zlib.net/"
+    }
+  ]
+}

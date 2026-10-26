@@ -1,0 +1,9 @@
+{
+  "path": "downloads/enrollment-installers/ubuntu-24.04.5-live-server-amd64.iso",
+  "sha256": "97f3d7ffb032c3eb3b23d2c8be9cc76e60c2c1f2c0146ba5ba9fe01cafae0fd8",
+  "name": "ubuntu-24.04.5-live-server-amd64.iso",
+  "url": "https://releases.ubuntu.com/24.04/ubuntu-24.04.5-live-server-amd64.iso",
+  "digest_source": "https://releases.ubuntu.com/24.04/SHA256SUMS",
+  "version": "24.04.5",
+  "trust": "Publisher HTTPS checksums; detached signature verification not claimed"
+}

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AgenticVM Desktop Ready</title>
+<style>
+*{box-sizing:border-box}body{margin:24px;background:white;color:#202124;font:16px/1.5 system-ui,sans-serif}
+main{max-width:600px}h1{font-size:20px;margin:0 0 8px}p{margin:0 0 20px}
+label{display:block;margin-bottom:4px}input,button{font:inherit;border:1px solid #999;border-radius:2px;padding:6px 10px}
+input{display:block;width:100%;background:white;color:#202124}button{display:block;margin-top:12px;background:#f4f4f4;color:#202124;cursor:pointer}
+input:focus-visible,button:focus-visible{outline:2px solid #175cd3;outline-offset:2px}
+output{display:block;margin-top:16px;overflow-wrap:anywhere}
+</style>
+<main><h1>Linux</h1><p>Linux is ready.</p>
+<form id="demo"><label for="message">Message</label><input id="message" name="message" autocomplete="off">
+<button id="submit" type="submit">Check</button></form>
+<output id="result" aria-live="polite">Ready.</output></main>
+<script>let count=0;document.querySelector('#demo').addEventListener('submit',e=>{e.preventDefault();count++;const value=document.querySelector('#message').value;document.querySelector('#result').textContent=`Check ${count} passed: ${value}`;document.title=`AgenticVM Check ${count} Passed: ${value}`;document.body.dataset.checkCount=count;});</script>
+<script>if(new URLSearchParams(location.search).has('scroll')){document.body.style.minHeight='1600px';addEventListener('scroll',()=>{document.title='AgenticVM Scrolled: '+Math.round(scrollY);});}</script>
+</html>

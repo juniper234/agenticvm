@@ -1,0 +1,12 @@
+{
+  "schema": "agenticvm.android-assets.v1",
+  "api_level": 35,
+  "abi": "x86_64",
+  "flavor": "AOSP default (no Google Play services)",
+  "sources": [
+    {"name": "emulator", "version": "37.2.12", "url": "https://dl.google.com/android/repository/emulator-windows_x64-16428233.zip", "size": 455342868, "sha1": "488ed747e82de7e9bb5247becd1ac043c7e5e85d", "destination": "emulator", "archive_root": "emulator"},
+    {"name": "platform-tools", "version": "37.0.1", "url": "https://dl.google.com/android/repository/platform-tools_r37.0.1-win.zip", "size": 8044989, "sha1": "e03e78b1d80b396f1c3358e31251cb31740e1110", "destination": "platform-tools", "archive_root": "platform-tools"},
+    {"name": "system-image", "version": "android-35-r02", "url": "https://dl.google.com/android/repository/sys-img/android/x86_64-35_r02.zip", "size": 782404023, "sha1": "2d857d170c0d1b827149565da34b3383e5306f7f", "destination": "system-images/android-35/default/x86_64", "archive_root": "x86_64"}
+  ],
+  "publisher_manifests": ["https://dl.google.com/android/repository/repository2-3.xml", "https://dl.google.com/android/repository/sys-img/android/sys-img2-1.xml"]
+}

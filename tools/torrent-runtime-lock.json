@@ -1,0 +1,11 @@
+{
+  "schema": "agenticvm.torrent-runtime.v1",
+  "version": "2.1.1",
+  "filename": "libtorrent-2.1.1-cp313-cp313-win_amd64.whl",
+  "url": "https://files.pythonhosted.org/packages/f0/2b/b843874837440dadb6d6cde2374a311367efdb40f86375de46cf9a0e59ea/libtorrent-2.1.1-cp313-cp313-win_amd64.whl",
+  "bytes": 5018669,
+  "sha256": "fa11aa801d5b9184f067f559c465d3074a4e878d9c671b00dd4930d6dfce2b46",
+  "source": "https://pypi.org/project/libtorrent/2.1.1/",
+  "upstream": "https://www.libtorrent.org/",
+  "destination": "tools/torrent-runtime/2.1.1"
+}

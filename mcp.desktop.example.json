@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "agenticvm-desktop": {
+      "command": "C:/path/to/AgenticVM/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "agenticvm.desktop_mcp",
+        "--ready-file",
+        "C:/path/to/AgenticVM/runtime/glass-app/viewer-ready.json",
+        "--workspace",
+        "C:/path/to/AgenticVM/runtime/glass-app/workspace",
+        "--exchange",
+        "C:/path/to/AgenticVM/runtime/glass-app/exchange"
+      ]
+    }
+  }
+}

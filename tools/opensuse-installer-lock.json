@@ -1,0 +1,9 @@
+{
+  "url": "https://download.opensuse.org/distribution/leap/15.6/iso/openSUSE-Leap-15.6-DVD-x86_64-Build710.3-Media.iso",
+  "name": "openSUSE-Leap-15.6-DVD-x86_64-Build710.3-Media.iso",
+  "sha256": "a74d4072e639c75ca127df3d869c1e57bcc44a093a969550f348a3ead561fe4f",
+  "version": "15.6",
+  "digest_source": "https://download.opensuse.org/distribution/leap/15.6/iso/openSUSE-Leap-15.6-DVD-x86_64-Build710.3-Media.iso.sha256",
+  "path": "downloads/enrollment-installers/openSUSE-Leap-15.6-DVD-x86_64-Build710.3-Media.iso",
+  "trust": "Publisher HTTPS checksum; detached signature verification not claimed"
+}
