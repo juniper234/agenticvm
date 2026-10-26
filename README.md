@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/agenticvm-logo.png" width="160" alt="AgenticVM logo">
+  <img src="docs/assets/agenticvm-logo-background.png" width="160" alt="AgenticVM logo with a white background">
 </p>
 
 <h1 align="center">AgenticVM</h1>
