@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "platform": "windows-x86_64",
+  "python": "3.13",
+  "source": "Official PyPI version metadata; SHA256 integrity pins, not publisher signatures",
+  "wheels": [
+    {
+      "name": "PyNaCl",
+      "version": "1.6.2",
+      "filename": "pynacl-1.6.2-cp38-abi3-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/41/ad/334600e8cacc7d86587fe5f565480fde569dfb487389c8e1be56ac21d8ac/pynacl-1.6.2-cp38-abi3-win_amd64.whl",
+      "bytes": 239754,
+      "sha256": "62985f233210dee6548c223301b6c25440852e13d59a8b81490203c3227c5ba0",
+      "requires": [
+        "cffi>=1.4.1; platform_python_implementation != \"PyPy\" and python_version < \"3.9\"",
+        "cffi>=2.0.0; platform_python_implementation != \"PyPy\" and python_version >= \"3.9\"",
+        "pytest>=7.4.0; extra == \"tests\"",
+        "pytest-cov>=2.10.1; extra == \"tests\"",
+        "pytest-xdist>=3.5.0; extra == \"tests\"",
+        "hypothesis>=3.27.0; extra == \"tests\"",
+        "sphinx<7; extra == \"docs\"",
+        "sphinx_rtd_theme; extra == \"docs\""
+      ]
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "filename": "cffi-2.1.1-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/60/a6/8b149b2c3f2e11aaa1618ef64500b45f50f22c57a977a4dff1aff1f91042/cffi-2.1.1-cp313-cp313-win_amd64.whl",
+      "bytes": 185688,
+      "sha256": "1aa5645c30469b09530c4ebca77ebf8f17618293c58f8549cb1a543a50236e7d",
+      "requires": [
+        "pycparser; implementation_name != \"PyPy\""
+      ]
+    },
+    {
+      "name": "pycparser",
+      "version": "3.11",
+      "filename": "pycparser-3.11-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/90/11/0e6f11117525ff0eec40ebac3d313376f102df93ca44ad9e893ee85e4f89/pycparser-3.11-py3-none-any.whl",
+      "bytes": 51178,
+      "sha256": "51d5a8ba2be0bbe440b99d2112604c95bbbc3c2748a64260186c541e1729cd80",
+      "requires": []
+    },
+    {
+      "name": "libtorrent",
+      "version": "2.1.1",
+      "filename": "libtorrent-2.1.1-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/f0/2b/b843874837440dadb6d6cde2374a311367efdb40f86375de46cf9a0e59ea/libtorrent-2.1.1-cp313-cp313-win_amd64.whl",
+      "bytes": 5018669,
+      "sha256": "fa11aa801d5b9184f067f559c465d3074a4e878d9c671b00dd4930d6dfce2b46",
+      "requires": []
+    },
+    {
+      "name": "pyghmi",
+      "version": "1.6.19",
+      "filename": "pyghmi-1.6.19-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/1a/46/b53a56ca81cdff545b360baf15027ea97e159297c08b3da0ceaa9eb8a2dd/pyghmi-1.6.19-py3-none-any.whl",
+      "bytes": 291448,
+      "sha256": "4d35ab89bf0217705a2deaea3335454ac56e43f369eeae663e78cb0b0082a1df",
+      "requires": [
+        "cryptography>=2.1",
+        "python-dateutil>=2.8.1"
+      ]
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.2",
+      "filename": "cryptography-50.0.2-cp39-abi3-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/f6/b6/a1faf3a27ae9405fb34b1713cc73b2d8a26b04d5c561578fa2e6ef3e5bb9/cryptography-50.0.2-cp39-abi3-win_amd64.whl",
+      "bytes": 3854095,
+      "sha256": "4e81d95e5bafc2d6e34e4bed780e53e4d5b9a2f928573428aa4d35fbec1eb0de",
+      "requires": [
+        "cffi>=2.0.0; platform_python_implementation != \"PyPy\"",
+        "typing-extensions>=4.13.2; python_full_version < \"3.11\"",
+        "bcrypt>=3.1.5; extra == \"ssh\""
+      ]
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "filename": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "bytes": 229892,
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "requires": [
+        "six >=1.5"
+      ]
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "filename": "six-1.17.0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+      "bytes": 11050,
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "requires": []
+    },
+    {
+      "name": "pefile",
+      "version": "2024.8.26",
+      "filename": "pefile-2024.8.26-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/54/16/12b82f791c7f50ddec566873d5bdd245baa1491bac11d15ffb98aecc8f8b/pefile-2024.8.26-py3-none-any.whl",
+      "bytes": 74766,
+      "sha256": "76f8b485dcd3b1bb8166f1128d395fa3d87af26360c2358fb75b80019b957c6f",
+      "requires": []
+    },
+    {
+      "name": "virt-firmware",
+      "version": "24.11",
+      "filename": "virt_firmware-24.11-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/c6/ef/96e8073a53401389562e07a4d73384a60870892f8b32e633fabf726e87f7/virt_firmware-24.11-py3-none-any.whl",
+      "bytes": 110440,
+      "sha256": "42566b77421aaa0db528867d1cef6bfaabae52366969ebdd369852a8da66b4d1",
+      "requires": [
+        "setuptools",
+        "cryptography",
+        "pefile"
+      ]
+    },
+    {
+      "name": "pycdlib",
+      "version": "1.21.0",
+      "filename": "pycdlib-1.21.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/d9/1d/04c8489b2ffc95c213b42314bc05186436a5f44872f1a97a946ab3ba913e/pycdlib-1.21.0-py3-none-any.whl",
+      "bytes": 237343,
+      "sha256": "1a82cd735542921d0dd7bc40381e7b7b9cbc70bd4c03e4f67a0531d59d2f518e",
+      "requires": []
+    },
+    {
+      "name": "setuptools",
+      "version": "80.9.0",
+      "filename": "setuptools-80.9.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/a3/dc/17031897dae0efacfea57dfd3a82fdd2a2aeb58e0ff71b77b87e44edc772/setuptools-80.9.0-py3-none-any.whl",
+      "bytes": 1201486,
+      "sha256": "062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922",
+      "requires": [
+        "pytest!=8.1.*,>=6; extra == \"test\"",
+        "virtualenv>=13.0.0; extra == \"test\"",
+        "wheel>=0.44.0; extra == \"test\"",
+        "pip>=19.1; extra == \"test\"",
+        "packaging>=24.2; extra == \"test\"",
+        "jaraco.envs>=2.2; extra == \"test\"",
+        "pytest-xdist>=3; extra == \"test\"",
+        "jaraco.path>=3.7.2; extra == \"test\"",
+        "build[virtualenv]>=1.0.3; extra == \"test\"",
+        "filelock>=3.4.0; extra == \"test\"",
+        "ini2toml[lite]>=0.14; extra == \"test\"",
+        "tomli-w>=1.0.0; extra == \"test\"",
+        "pytest-timeout; extra == \"test\"",
+        "pytest-perf; sys_platform != \"cygwin\" and extra == \"test\"",
+        "jaraco.develop>=7.21; (python_version >= \"3.9\" and sys_platform != \"cygwin\") and extra == \"test\"",
+        "pytest-home>=0.5; extra == \"test\"",
+        "pytest-subprocess; extra == \"test\"",
+        "pyproject-hooks!=1.1; extra == \"test\"",
+        "jaraco.test>=5.5; extra == \"test\"",
+        "sphinx>=3.5; extra == \"doc\"",
+        "jaraco.packaging>=9.3; extra == \"doc\"",
+        "rst.linker>=1.9; extra == \"doc\"",
+        "furo; extra == \"doc\"",
+        "sphinx-lint; extra == \"doc\"",
+        "jaraco.tidelift>=1.4; extra == \"doc\"",
+        "pygments-github-lexers==0.0.5; extra == \"doc\"",
+        "sphinx-favicon; extra == \"doc\"",
+        "sphinx-inline-tabs; extra == \"doc\"",
+        "sphinx-reredirects; extra == \"doc\"",
+        "sphinxcontrib-towncrier; extra == \"doc\"",
+        "sphinx-notfound-page<2,>=1; extra == \"doc\"",
+        "pyproject-hooks!=1.1; extra == \"doc\"",
+        "towncrier<24.7; extra == \"doc\"",
+        "packaging>=24.2; extra == \"core\"",
+        "more_itertools>=8.8; extra == \"core\"",
+        "jaraco.text>=3.7; extra == \"core\"",
+        "importlib_metadata>=6; python_version < \"3.10\" and extra == \"core\"",
+        "tomli>=2.0.1; python_version < \"3.11\" and extra == \"core\"",
+        "wheel>=0.43.0; extra == \"core\"",
+        "platformdirs>=4.2.2; extra == \"core\"",
+        "jaraco.functools>=4; extra == \"core\"",
+        "more_itertools; extra == \"core\"",
+        "pytest-checkdocs>=2.4; extra == \"check\"",
+        "pytest-ruff>=0.2.1; sys_platform != \"cygwin\" and extra == \"check\"",
+        "ruff>=0.8.0; sys_platform != \"cygwin\" and extra == \"check\"",
+        "pytest-cov; extra == \"cover\"",
+        "pytest-enabler>=2.2; extra == \"enabler\"",
+        "pytest-mypy; extra == \"type\"",
+        "mypy==1.14.*; extra == \"type\"",
+        "importlib_metadata>=7.0.2; python_version < \"3.10\" and extra == \"type\"",
+        "jaraco.develop>=7.21; sys_platform != \"cygwin\" and extra == \"type\""
+      ]
+    }
+  ]
+}

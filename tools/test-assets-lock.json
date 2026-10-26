@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "purpose": "Optional prepared-build interoperability/inventory checks; no VM is launched",
+  "preparation": [
+    "scripts/build-linux-pxe.py",
+    "scripts/prepare-realism-tools.py",
+    "scripts/prepare-uki-stub.py"
+  ],
+  "files": [
+    {
+      "path": "runtime/linux-pxe-base-v3/build-manifest.json",
+      "bytes": 2252,
+      "sha256": "ccbc4d1c64a0dc5e3d59381ecac837caf9998df8c456c185673e284fd030afb6",
+      "kind": "prepared"
+    },
+    {
+      "path": "tools/realism/ipxe.efi",
+      "bytes": 397160,
+      "sha256": "6558e37887516b246d6a97122e8d18bedfe4197b7ba7f67bf1bf102a16678d33",
+      "kind": "prepared"
+    },
+    {
+      "path": "tools/uki-stub/linuxx64.efi.stub",
+      "bytes": 92160,
+      "sha256": "9c623743834bb904a3cb941092cffc958c31230263ce896d332a75e9ec48aa85",
+      "kind": "prepared"
+    },
+    {
+      "path": "runtime/linux-pxe-base-v3/rootfs.ext2",
+      "bytes": 536870912,
+      "sha256": "2b744918800136c7b56621d7d0bdd3db5803216bf5f767059d0d64c31c9d3b21",
+      "kind": "prepared"
+    },
+    {
+      "path": "runtime/linux-pxe-base-v3/agenticvm-linux-peer.iso",
+      "bytes": 13979648,
+      "sha256": "cf3a269bea50c28beaf05debcaaaabd12ffcef2cc38a2f2f32a0d8599f9429e2",
+      "kind": "prepared"
+    },
+    {
+      "path": "runtime/linux-pxe-base-v3/pxe-e1000.rom",
+      "bytes": 109056,
+      "sha256": "33230a07267534f98b22a9817b62860ed0ddc82eab38fd1e4e6fd58ce25a5c9a",
+      "kind": "prepared"
+    },
+    {
+      "path": "runtime/linux-pxe-base-v3/vmlinuz",
+      "bytes": 12608512,
+      "sha256": "40f620bc8c93d952e57dd8dfc0f94fca1759d192a4fc4a260705d50ca378559c",
+      "kind": "prepared"
+    },
+    {
+      "path": "runtime/linux-pxe-base-v3/plain-root.cpio.gz",
+      "bytes": 45529048,
+      "sha256": "104ebb2399881bc3c7c8e9532d776f97ed1eec4ad781d1f28973e75afad2bbad",
+      "kind": "prepared"
+    },
+    {
+      "path": "runtime/linux-pxe-base-v3/package-lock.json",
+      "bytes": 88354,
+      "sha256": "84def9ab84c4acfdd107da4b0d2673d23238ac9219b7a71053cca643c6ab15cf",
+      "kind": "prepared"
+    },
+    {
+      "path": "guest/pxe-init.sh",
+      "bytes": 1721,
+      "sha256": "5649f868ca319a3e2309461f1f8f9ab1eab7018e975ca725dbaa72ca5922ea56",
+      "kind": "source"
+    },
+    {
+      "path": "guest/pxe-lan-init.sh",
+      "bytes": 1451,
+      "sha256": "183859a671bd498cc61d8771b31dfb406b6b6f480c054732d4d2c2504f1e149d",
+      "kind": "source"
+    }
+  ]
+}

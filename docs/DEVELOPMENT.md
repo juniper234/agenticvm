@@ -6,7 +6,7 @@ The repository keeps first-party source and pinned dependency descriptions. Prep
 
 Create a Python 3.13 virtual environment, then install the checkout with `python -m pip install -e .`. The core package declares no mandatory third-party Python dependencies. Its optional `transfer` extra pins PyNaCl, cffi and pycparser for the corresponding transfer features.
 
-Run `python -m unittest discover -s tests -v` from the checkout after installing it. Host tests exercise contracts and local fixtures; native VM campaigns are separate scripts. Scripts that prepare or download tools are explicit actions and are not run by the test command merely to obtain missing dependencies.
+For the full host suite, use the pinned setup and runner in [TESTING.md](TESTING.md). A standard virtual environment can install `requirements-test.txt`; the portable Windows setup also works when the embedded interpreter has no pip. Host tests exercise contracts and local fixtures; native VM campaigns are separate scripts. Preparation/download steps are explicit and are not run automatically during test discovery.
 
 ## Windows desktop
 

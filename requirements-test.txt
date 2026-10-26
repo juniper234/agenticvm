@@ -1,0 +1,12 @@
+PyNaCl==1.6.2
+cffi==2.1.1
+pycparser==3.11
+libtorrent==2.1.1
+pyghmi==1.6.19
+cryptography==50.0.2
+python-dateutil==2.9.0.post0
+six==1.17.0
+pefile==2024.8.26
+virt-firmware==24.11
+pycdlib==1.21.0
+setuptools==80.9.0

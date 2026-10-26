@@ -87,15 +87,22 @@ def main(argv=None):
         from .viewer import main as serve
         from .control_client import ROOT
         import os
+        previous_socket_root = os.environ.get('AGENTICVM_SOCKET_ROOT')
         os.environ.setdefault('AGENTICVM_SOCKET_ROOT', str(ROOT/'runtime/ipc'))
         try:
-            existing = ControlClient(ready_file=args.ready_file, workspace=args.workspace, exchange=args.exchange, session=args.session).request('/api/info')
-            if Path(existing['workspace']).resolve() == args.workspace.resolve():
-                print(json.dumps({'ok': True, 'result': {'status': 'already-listening'}}))
-                return 0
-        except (OSError, ValueError, KeyError):
-            pass
-        return serve(['--workspace', str(args.workspace), '--session', args.session, '--port', '0', '--ready-file', str(args.ready_file), '--quiet-launch'])
+            try:
+                existing = ControlClient(ready_file=args.ready_file, workspace=args.workspace, exchange=args.exchange, session=args.session).request('/api/info')
+                if Path(existing['workspace']).resolve() == args.workspace.resolve():
+                    print(json.dumps({'ok': True, 'result': {'status': 'already-listening'}}))
+                    return 0
+            except (OSError, ValueError, KeyError):
+                pass
+            return serve(['--workspace', str(args.workspace), '--session', args.session, '--port', '0', '--ready-file', str(args.ready_file), '--quiet-launch'])
+        finally:
+            if previous_socket_root is None:
+                os.environ.pop('AGENTICVM_SOCKET_ROOT', None)
+            else:
+                os.environ['AGENTICVM_SOCKET_ROOT'] = previous_socket_root
     client = ControlClient(ready_file=args.ready_file, workspace=args.workspace, exchange=args.exchange, session=args.session)
     if args.target_session is not None or args.lease is not None:
         client=client.bound(args.target_session or 'main',args.lease,args.generation)

@@ -42,11 +42,16 @@ The local service uses private admission information. Its generated state belong
 
 ## Test
 
+The complete host suite includes independent BitTorrent, encrypted-transfer, PE/firmware and authenticated IPMI interoperability checks. It needs the pinned test dependencies and prepared image fixtures; these are separate from the minimal CLI installation above.
+
 ```powershell
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+.\.venv\Scripts\python.exe scripts/prepare-test-environment.py --download --asset-cache "C:\path\to\prepared-AgenticVM"
+.\tools\test-environment\python.exe -I -B scripts/run-host-tests.py --temp-root "C:\short\writable\folder"
 ```
 
-Some platform or optional dependency checks require their corresponding tools and permissions. The host suite is separate from native VM campaigns, physical-device testing and resource measurements on a 4 GB host. See [verification](docs/VERIFICATION.md) for this publication's measured results and limits.
+The preparation command verifies hashes before downloading/extracting dependencies or importing the explicitly listed build assets. It does not launch a guest or change global Python settings. The test runner does not filter out the prepared-asset checks or automatically download prerequisites. See [test setup](docs/TESTING.md) for cache preparation, standard virtual environments and reordered runs.
+
+The host suite is separate from native VM campaigns, physical-device testing and resource measurements on a 4 GB host. See [verification](docs/VERIFICATION.md) for measured results and platform limits.
 
 ## Project layout
 

@@ -15,7 +15,6 @@ from uuid import uuid4
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-os.environ.setdefault('AGENTICVM_SOCKET_ROOT', str(ROOT / 'runtime/ipc'))
 
 from agenticvm.errors import AgenticVMError
 from agenticvm.transport import SocketTransport
@@ -130,4 +129,5 @@ def main():
 
 
 if __name__ == '__main__':
+    os.environ.setdefault('AGENTICVM_SOCKET_ROOT', str(ROOT / 'runtime/ipc'))
     main()

@@ -4,21 +4,29 @@ The public source snapshot was prepared on **26 October 2026**. It was copied in
 
 ## Source and privacy checks
 
-- All 404 included Python files parsed successfully.
+- All 408 included Python files parsed successfully, including the added test/setup source.
 - The exact Git index was checked for personal paths, unrelated project names, credential literals, private keys, provider/GitHub tokens, live tunnel links and excluded artifact types.
 - Scanner matches were reviewed: synthetic URL/authentication-rejection fixtures and public Debian signing-key metadata. No personal-project or credential finding remained in the selected publication contents.
 - Local runtime directories, credentials, VM disks, operating-system media, downloaded tools, local model weights, handover records, raw evidence, screenshots, third-party research checkouts and separate DSH plugin projects are excluded.
 - The README logo is the existing AgenticVM project asset. Its published bytes are checked against the local project logo.
 
-## Host suite result and limitations
+## Test fixes and current result
 
-The frozen-source run discovered **505 reported test cases**: **2 failures, 10 errors and 1 skip**. This is **not a clean full-suite pass**. The initial run also exposed test-environment setup issues; rerunning with a writable shorter temporary directory and an empty local `runtime` directory removed those setup failures without changing source assertions.
+The final repaired suite reports **546 tests: 545 passed, zero failures, zero errors and one platform skip**. Full normal-order and deterministic shuffled-order runs also passed at 545 cases; the final reverse-order run includes the added source-archive integrity check. No source changed during these passing runs. Focused regressions, active-development-copy checks and repeated offline preparation also passed.
 
-Remaining blockers in this source-only environment:
+The fixes cover:
 
-- Missing optional `libtorrent`, `nacl` / PyNaCl, `pefile` and `pyghmi` dependencies.
-- Missing prepared PXE build files and Windows application-runtime metadata, which are intentionally outside Git.
-- Three Windows guest checks rejected the deep publication checkout because of private socket path limits.
-- One symbolic-link boundary check was skipped because this Windows token cannot create symbolic links.
+- The control CLI now scopes and restores its default socket-root environment on reuse, normal return and errors.
+- Importing the Windows supervisor no longer changes the caller's socket-root environment. Executing the supervisor still configures its intended default before running.
+- Windows unattended-selector tests construct their own bounded fixture inputs, including digest and unapproved-image denial checks; they do not require a real prepared Windows installation.
+- Pinned dependency preparation supplies the actual libtorrent, PyNaCl, firmware/PE and IPMI dependencies even to isolated subprocesses.
+- The strict prepared-PXE/firmware assertions remain in the suite. Their build assets were imported only after size/hash verification against the committed test-asset lock.
+- Preparation rejects archive traversal/links/collisions, preserves changed files and safely reuses the expected Windows interpreter configuration in LF or CRLF form.
 
-Some test modules cannot load until their optional dependencies are available, so the reported discovery count does not certify that every possible test ran. The private raw logs were retained locally. No native VM campaign, provider inference or physical-device acceptance was performed for this source publication.
+The earlier source-only discovery reported 505 cases with missing dependencies/assets and environment failures. Those failed receipts/logs were retained locally. Additional encrypted-transfer cases can now load, and new regression cases explain the increased count. No previously failing asset assertion was removed, filtered out or converted into a passing stub.
+
+## Remaining limits
+
+One symbolic-link boundary check remains explicitly skipped because the Windows test token lacks permission to create a symbolic link. Host security settings were not changed to bypass that limitation. The real directory-junction refusal checks still run.
+
+The pinned firmware helper emits its existing `pkg_resources` deprecation warning; its compatible setuptools version is pinned. Generated dependencies, images, test identities and raw receipts stay outside Git. These host checks include real loopback protocol/asset tests but do not establish native VM, provider/model, physical-device or 4 GB host acceptance. See [TESTING.md](TESTING.md) to reproduce the setup and ordered runs.
